@@ -8,14 +8,14 @@ layout: default
 <p align="center">
   <table>
     <tr>
-      <td align="center"><img src="assets/facilitators/DrD.jpg" width="220"><br>Dr. Dharshana Kasthurirathne<br>Sri Lanka Institute of Information Technology <br>dharshana.k@sliit.lk</td>
-      <td align="center"><img src="assets/facilitators/DrM.jpg" width="220"><br>Dr. Mahima Weerasinghe <br>Sri Lanka Institute of Information Technology <br>>mahima.w@sliit.lk</td>
-       <td align="center"><img src="assets/facilitators/DrUoW.jpg" width="220"><br>Dr. Dinuka Sahabandu<br>University of Washington<br>sdinuka@uw.edu</td>
+      <td align="center"><img src="assets/facilitators/DrD.jpg" width="220"><br>Dr. Dharshana Kasthurirathne<br>Sri Lanka Institute of Information Technology (SLIIT)<br>dharshana.k@sliit.lk</td>
+      <td align="center"><img src="assets/facilitators/DrM.jpg" width="220"><br>Dr. Mahima Weerasinghe <br>Sri Lanka Institute of Information Technology (SLIIT)<br>>mahima.w@sliit.lk</td>
+       <td align="center"><img src="assets/facilitators/DrUoW.jpg" width="220"><br>Dr. Dinuka Sahabandu<br>University of Washington (UoW)<br>sdinuka@uw.edu</td>
     </tr>
     <tr>
-      <td align="center"><img src="assets/facilitators/MrJ.jpg" width="220"><br>Mr. Jeewaka Perera<br>Sri Lanka Institute of Information Technology<br>jeewaka.p@sliit.lk</td>
-      <td align="center"><img src="assets/facilitators/MrA.jpg" width="220"><br>Mr. Asiri Gawesha<br>Sri Lanka Institute of Information Technology<br>asiri.l@sliit.lk</td>  
-      <td align="center"><img src="assets/facilitators/MrS.jpg" width="220"><br>Mr. Sanka Mohottala<br>Sri Lanka Institute of Information Technology<br>sanka.m@sliit.lk</td>
+      <td align="center"><img src="assets/facilitators/MrJ.jpg" width="220"><br>Mr. Jeewaka Perera<br>Sri Lanka Institute of Information Technology (SLIIT)<br>jeewaka.p@sliit.lk</td>
+      <td align="center"><img src="assets/facilitators/MrA.jpg" width="220"><br>Mr. Asiri Gawesha<br>Sri Lanka Institute of Information Technology (SLIIT)<br>asiri.l@sliit.lk</td>  
+      <td align="center"><img src="assets/facilitators/MrS.jpg" width="220"><br>Mr. Sanka Mohottala<br>Sri Lanka Institute of Information Technology (SLIIT)<br>sanka.m@sliit.lk</td>
 
       
     </tr>
