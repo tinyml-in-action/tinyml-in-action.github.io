@@ -2,7 +2,7 @@
 layout: default
 ---
 
-**\[UPDATE\]** We kindly ask you to fill in this [anonymous form](https://docs.google.com/forms/d/1Am4LBsYtyOVzo3axIRqYOC7vHOB5BQ9aSMyvTsjjF7I/edit) regarding the overall quality of the tutorial. As we are planning to present it to other venues, your feedback might be extremely important for us 🙏🙂
+**\[UPDATE\]** We kindly ask you to fill in this [anonymous form](https://docs.google.com/forms/d/e/1FAIpQLSfuq7dJ6yWRrH9HaiWqsnVwQT2zZ_G1mtGSkxErz2kqYdRDqw/viewform?usp=preview) regarding the overall quality of the tutorial. As we are planning to present it to other venues, your feedback might be extremely important for us 🙏🙂
 
 ## **Facilitators Team**
 <p align="center">
