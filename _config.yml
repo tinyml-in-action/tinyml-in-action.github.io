@@ -4,3 +4,8 @@ description: International Conference on Advanced Research in Computing (ICARC-2
 # google_analytics:
 theme: jekyll-theme-cayman
 
+github:
+  zip_url: https://github.com/BrAINLabs-Inc/ICARC_2025_GNN_Tutorial/archive/refs/heads/main.zip
+  tar_url: https://github.com/BrAINLabs-Inc/ICARC_2025_GNN_Tutorial/archive/refs/heads/main.tar.gz
+show_downloads: true  # This enables the download buttons
+
