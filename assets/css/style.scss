@@ -3,14 +3,14 @@
 
 @import 'jekyll-theme-cayman';
 
-.main-content {
-  @media screen and (min-width: 64em) {
-    max-width: 75rem;  // Increased from 64rem
-    padding: 2rem 6rem;
-    margin: 0 auto;
-    font-size: 1.1rem;
-  }
-}
+// .main-content {
+//   @media screen and (min-width: 64em) {
+//     max-width: 75rem;  // Increased from 64rem
+//     padding: 2rem 6rem;
+//     margin: 0 auto;
+//     font-size: 1.1rem;
+//   }
+// }
 
 
 // // Justify abstract text
@@ -19,28 +19,28 @@
 //     text-justify: inter-word;
 //   }
 
-#facilitators-team + p {
-    table {
-      min-width: 1000px;
-      margin: 0 auto;
-      border: none;
+// #facilitators-team + p {
+//     table {
+//       min-width: 1000px;
+//       margin: 0 auto;
+//       border: none;
       
-      td {
-        border: none;
-        padding: 10px;
-      }
+//       td {
+//         border: none;
+//         padding: 10px;
+//       }
       
-      th {
-        border: none;
-      }
-    }
+//       th {
+//         border: none;
+//       }
+//     }
     
-    overflow-x: auto;
-    display: block;
+//     overflow-x: auto;
+//     display: block;
     
-    img {
-      width: 200px;
-      height: auto;
-      min-width: 200px;
-    }
-  }
+//     img {
+//       width: 200px;
+//       height: auto;
+//       min-width: 200px;
+//     }
+//   }
