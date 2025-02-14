@@ -48,3 +48,9 @@
       min-width: 200px;
     }
 }
+// Center regular tables (like the schedule table)
+.main-content table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;  // You can adjust this value
+}
