@@ -9,7 +9,7 @@ layout: default
   <table>
     <tr>
       <td align="center"><img src="assets/facilitators/DrD.jpg" width="220"><br>Dr. Dharshana Kasthurirathne<br>Sri Lanka Institute of Information Technology (SLIIT)<br>dharshana.k@sliit.lk</td>
-      <td align="center"><img src="assets/facilitators/DrM.jpg" width="220"><br>Dr. Mahima Weerasinghe <br>Sri Lanka Institute of Information Technology (SLIIT)<br>>mahima.w@sliit.lk</td>
+      <td align="center"><img src="assets/facilitators/DrM.jpg" width="220"><br>Dr. Mahima Weerasinghe <br>Sri Lanka Institute of Information Technology (SLIIT)<br>mahima.w@sliit.lk</td>
        <td align="center"><img src="assets/facilitators/DrUoW.jpg" width="220"><br>Dr. Dinuka Sahabandu<br>University of Washington (UoW)<br>sdinuka@uw.edu</td>
     </tr>
     <tr>
