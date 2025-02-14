@@ -9,13 +9,13 @@ layout: default
   <table>
     <tr>
       <td align="center"><img src="assets/facilitators/DrD.jpg" width="200"><br>Dr. Dharshana Kasthurirathne<br>Sri Lanka Institute of Information Technology <br>dharshana.k@sliit.lk</td>
-      <td align="center"><img src="assets/facilitators/DrM.jpg" width="200"><br>Dr. Mahima Weerasinghe <br>Sri Lanka Institute of Information Technology <br>mahima.w@sliit.lk</td>
+      <td align="center"><img src="assets/facilitators/DrM.jpg" width="200"><br>Dr. Mahima Weerasinghe <br>Sri Lanka Institute of Information Technology <br>>mahima.w@sliit.lk</td>
        <td align="center"><img src="assets/facilitators/DrUoW.jpg" width="200"><br>Dr. Dinuka Sahabandu<br>University of Washington<br>sdinuka@uw.edu</td>
     </tr>
     <tr>
-      <td align="center"><img src="assets/facilitators/MrJ.jpg" width="200"><br>Mr. Jeewaka Perera</td>
-      <td align="center"><img src="assets/facilitators/MrA.jpg" width="200"><br>Mr. Asiri Gawesha</td>  
-      <td align="center"><img src="assets/facilitators/MrS.jpg" width="200"><br>Mr. Sanka Mohottala</td>
+      <td align="center"><img src="assets/facilitators/MrJ.jpg" width="200"><br>Mr. Jeewaka Perera<br>Sri Lanka Institute of Information Technology<br>>jeewaka.p@sliit.lk</td>
+      <td align="center"><img src="assets/facilitators/MrA.jpg" width="200"><br>Mr. Asiri Gawesha<br>Sri Lanka Institute of Information Technology<br>>asiri.l@sliit.lk</td>  
+      <td align="center"><img src="assets/facilitators/MrS.jpg" width="200"><br>Mr. Sanka Mohottala<br>Sri Lanka Institute of Information Technology<br>>sanka.m@sliit.lk</td>
 
       
     </tr>
@@ -98,7 +98,7 @@ By the end of the workshop, participants will:
 - Deploy TinyML models on embedded devices and mobile applications.
 - Identify advanced applications of TinyML. -->
 
-**Closing remarks and Q&A**: 10 minutes
+<!-- **Closing remarks and Q&A**: 10 minutes -->
 
 ## Additional useful material
 
