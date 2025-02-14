@@ -26,26 +26,7 @@ layout: default
 
 ## Abstract
 
-Graph Neural Networks (GNNs) are revolutionizing the field of machine learning by en-
-abling the analysis of graph-structured data, which is pervasive in domains such as social net-
-works, molecular biology, and recommendation systems. Unlike traditional neural networks
-designed for grid-like data structures, GNNs utilize a message-passing mechanism, enabling
-nodes to iteratively aggregate information from their neighbors. This tutorial, titled ”Graph
-Neural Networks: From Zero to Hero,” introduces Sri Lankan researchers to the foundational
-concepts, advanced methodologies, and practical applications of GNNs.The tutorial spans
-eight modules, covering basics like graph theory and linear algebra, advanced GNN architec-
-tures such as Graph Convolutional Networks (GCNs) and Graph Attention Networks (GATs),
-and hands-on sessions using PyTorch Geometric (PyG). Applications explored include molec-
-ular property prediction, traffic forecasting, and computer vision tasks such as human action
-recognition. Special topics like graph expressivity, structural encoding, and challenges like
-oversmoothing are also addressed. Participants will gain insights into cutting-edge develop-
-ments like Geometric Deep Learning and Topological Neural Networks, paving the way for
-further research. This initiative is crucial, given the under-representation of GNN research in
-local conferences despite its global prominence. Through engaging, hands-on sessions leverag-
-ing Python and Google Colab, the tutorial caters to a diverse audience of students, academics,
-and industry professionals, requiring only foundational knowledge in deep learning and graph
-theory.This tutorial is organized by researchers from the BrAIN Labs Research Group at the
-Sri Lanka Institute of Information Technology (SLIIT).
+Graph Neural Networks (GNNs) are revolutionizing the field of machine learning by enabling the analysis of graph-structured data, which is pervasive in domains such as social networks, molecular biology, and recommendation systems. Unlike traditional neural networks designed for grid-like data structures, GNNs utilize a message-passing mechanism, enabling nodes to iteratively aggregate information from their neighbors. This tutorial, titled ”Graph Neural Networks: From Zero to Hero,” introduces Sri Lankan researchers to the foundational concepts, advanced methodologies, and practical applications of GNNs.The tutorial spans eight modules, covering basics like graph theory and linear algebra, advanced GNN architectures such as Graph Convolutional Networks (GCNs) and Graph Attention Networks (GATs), and hands-on sessions using PyTorch Geometric (PyG). Applications explored include molecular property prediction, traffic forecasting, and computer vision tasks such as human action recognition. Special topics like graph expressivity, structural encoding, and challenges like oversmoothing are also ddressed. Participants will gain insights into cutting-edge developments like Geometric Deep Learning and Topological Neural Networks, paving the way for further research. This initiative is crucial, given the under-representation of GNN research in local conferences despite its global prominence. Through engaging, hands-on sessions leveraging Python and Google Colab, the tutorial caters to a diverse audience of students, academics, and industry professionals, requiring only foundational knowledge in deep learning and graph theory.This tutorial is organized by researchers from the BrAIN Labs Research Group at the Sri Lanka Institute of Information Technology (SLIIT).
 
 ## GNN Tutorial Schedule
 
