@@ -54,3 +54,11 @@
     margin-right: auto;
     width: 95%;  // You can adjust this value
 }
+
+// Logo container responsive styling
+@media screen and (max-width: 42em) {
+    div[style*="display: flex"] {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
