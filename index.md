@@ -32,12 +32,12 @@ Graph Neural Networks (GNNs) are revolutionizing the field of machine learning b
 
 | Time Duration         | Description                                      | Resource Person            |
 |----------------------|------------------------------------------------|----------------------------|
-| 8:30 – 9:10 (40 min) | - Introduction to tutorial  <br> - Introduction to GNN and its applications <br> - Basic graph theory <br> - Graph neural networks <br> - Message passing GNN (MPGNN) | Dr. Mahima Weerasinghe    |
-| 9:10 - 9:20 (10 min) | **Break**                                      |                            |
-| 9:20 – 10:00 (40 min) | - GCN architecture <br> - GAT architecture     | Mr. Sanka Mohottala        |
-| 10:00 – 10:40 (40 min) | - GNN application (Coding session)             | Mr. Asiri Gawesha          |
-| 10:40 – 11:20 (40 min) | - New frontiers of GNN                         | Mr. Jeewaka Perera         |
-| 11:20 – 11:30 (10 min) | - Q and A session                              | All resource persons will be present |
+| 8:30 AM – 9:10 AM | - Introduction to tutorial  <br> - Introduction to GNN and its applications <br> - Basic graph theory <br> - Graph neural networks <br> - Message passing GNN (MPGNN) | Dr. Mahima Weerasinghe    |
+| 9:10 AM - 9:20 AM | **Break**                                      |                            |
+| 9:20 AM – 10:00 AM | - GCN architecture <br> - GAT architecture     | Mr. Sanka Mohottala        |
+| 10:00 AM – 10:40 AM | - GNN application (Coding session)             | Mr. Asiri Gawesha          |
+| 10:40 AM – 11:20 AM | - New frontiers of GNN                         | Mr. Jeewaka Perera         |
+| 11:20 AM – 11:30 AM | - Q and A session                              | All resource persons will be present |
 
 
 
