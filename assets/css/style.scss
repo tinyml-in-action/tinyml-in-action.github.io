@@ -18,3 +18,29 @@
 //     text-align: justify;
 //     text-justify: inter-word;
 //   }
+
+#facilitators-team + p {
+    table {
+      min-width: 1000px;
+      margin: 0 auto;
+      border: none;
+      
+      td {
+        border: none;
+        padding: 10px;
+      }
+      
+      th {
+        border: none;
+      }
+    }
+    
+    overflow-x: auto;
+    display: block;
+    
+    img {
+      width: 200px;
+      height: auto;
+      min-width: 200px;
+    }
+  }
