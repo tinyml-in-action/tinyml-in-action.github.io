@@ -8,10 +8,10 @@ layout: default
 <p align="center">
   <table>
     <tr>
+      <td align="center"><img src="assets/facilitators/DrD.jpg" width="200"><br>Dr. Dharshana Kasthurirathne<br>Dr. Dharshana Kasthurirathne Dr. Dharshana Kasthurirathne</td>
       <td align="center"><img src="assets/facilitators/DrD.jpg" width="200"><br>Dr. Dharshana Kasthurirathne<br>Dr. Dharshana Kasthurirathne<br>Dr. Dharshana Kasthurirathne</td>
-      <td align="center"><img src="assets/facilitators/DrD.jpg" width="200"><br>Dr. Dharshana Kasthurirathne<br>Dr. Dharshana Kasthurirathne<br>Dr. Dharshana Kasthurirathne</td>
-      <td align="center"><img src="assets/facilitators/DrD.jpg" width="200"><br>Dr. Dharshana Kasthurirathne<br>Dr. Dharshana Kasthurirathne<br>Dr. Dharshana Kasthurirathne</td>
-      <!-- <td align="center"><img src="assets/facilitators/DrM.jpg" width="200"><br>Dr. Mahima Weerasinghe</td> -->
+      <!-- <td align="center"><img src="assets/facilitators/DrD.jpg" width="200"><br>Dr. Dharshana Kasthurirathne<br>Dr. Dharshana Kasthurirathne<br>Dr. Dharshana Kasthurirathne</td> -->
+      <td align="center"><img src="assets/facilitators/DrM.jpg" width="200"><br>Dr. Mahima Weerasinghe</td>
        <!-- <td align="center"><img src="assets/facilitators/DrUoW.jpg" width="200"><br>Dr. Dinuka Sahabandu</td> -->
     </tr>
     <tr>
