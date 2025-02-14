@@ -6,6 +6,6 @@ theme: jekyll-theme-cayman
 
 github:
   zip_url: https://github.com/BrAINLabs-Inc/ICARC_2025_GNN_Tutorial/archive/refs/heads/main.zip
-  tar_url: https://github.com/BrAINLabs-Inc/ICARC_2025_GNN_Tutorial/archive/refs/heads/main.tar.gz
+  tar_url: https://icarc.lk/tutorial.php
 show_downloads: true  # This enables the download buttons
 
