@@ -13,31 +13,3 @@
 }
 
 
-// Facilitator team table styling
-#facilitators-team + p {
-    table {
-      min-width: 1000px;
-      margin: 0 auto;
-      border: none;        // Remove table border
-      
-      // Remove borders from table cells
-      td {
-        border: none;
-        padding: 10px;    // Add some padding instead of borders
-      }
-      
-      // Remove borders from table headers if any
-      th {
-        border: none;
-      }
-    }
-    
-    overflow-x: auto;
-    display: block;
-    
-    img {
-      width: 220px;
-      height: auto;
-      min-width: 220px;
-    }
-  }
