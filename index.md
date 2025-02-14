@@ -22,7 +22,7 @@ layout: default
   </table>
 </p>
 
-**\[UPDATE\]** We kindly ask you to fill in this [anonymous form](https://docs.google.com/forms/d/e/1FAIpQLSfuq7dJ6yWRrH9HaiWqsnVwQT2zZ_G1mtGSkxErz2kqYdRDqw/viewform?usp=preview) regarding the overall quality of the tutorial. As we are planning to present it to other venues, your feedback might be extremely important for us 🙏🙂
+**\[UPDATE - 14/02/25\]** We kindly ask you to fill in this [anonymous form](https://docs.google.com/forms/d/e/1FAIpQLSfuq7dJ6yWRrH9HaiWqsnVwQT2zZ_G1mtGSkxErz2kqYdRDqw/viewform?usp=preview) regarding the overall quality of the tutorial. As we are planning to present it to other venues, your feedback might be extremely important for us 🙏🙂
 
 ## Abstract
 
