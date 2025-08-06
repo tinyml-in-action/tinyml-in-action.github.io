@@ -22,12 +22,13 @@ layout: default
   </table>
 </p>
 
-**\[UPDATE - 14/02/25\]** We kindly ask you to fill in this [anonymous form](https://docs.google.com/forms/d/e/1FAIpQLSfuq7dJ6yWRrH9HaiWqsnVwQT2zZ_G1mtGSkxErz2kqYdRDqw/viewform?usp=preview) regarding the overall quality of the tutorial. As we are planning to present it to other venues, your feedback might be extremely important for us 🙏🙂
+**\[UPDATE - 14/02/25\]** We kindly ask you to fill in this [anonymous form](https://docs.google.com/forms/d/e/1FAIpQLSfuq7dJ6yWRrH9HaiWqsnVwQT2zZ_G1mtGSkxErz2kqYdRDqw/viewform?usp=preview) regarding the overall quality of the tutorial. As we are planning to present it to other venues, your feedback might be extremely important for us 🙏🙂 -->
 
 ## Abstract
 
-Graph Neural Networks (GNNs) are revolutionizing the field of machine learning by enabling the analysis of graph-structured data, which is pervasive in domains such as social networks, molecular biology, and recommendation systems. Unlike traditional neural networks designed for grid-like data structures, GNNs utilize a message-passing mechanism, enabling nodes to iteratively aggregate information from their neighbors. This tutorial, titled ”Graph Neural Networks: From Zero to Hero,” introduces Sri Lankan researchers to the foundational concepts, advanced methodologies, and practical applications of GNNs.The tutorial spans eight modules, covering basics like graph theory and linear algebra, advanced GNN architectures such as Graph Convolutional Networks (GCNs) and Graph Attention Networks (GATs), and hands-on sessions using PyTorch Geometric (PyG). Applications explored include molecular property prediction, traffic forecasting, and computer vision tasks such as human action recognition. Special topics like graph expressivity, structural encoding, and challenges like oversmoothing are also ddressed. Participants will gain insights into cutting-edge developments like Geometric Deep Learning and Topological Neural Networks, paving the way for further research. This initiative is crucial, given the under-representation of GNN research in local conferences despite its global prominence. Through engaging, hands-on sessions leveraging Python and Google Colab, the tutorial caters to a diverse audience of students, academics, and industry professionals, requiring only foundational knowledge in deep learning and graph theory. This tutorial is organized by researchers from the BrAIN Labs Research Group at the Sri Lanka Institute of Information Technology (SLIIT).
+As deep learning models become increasingly complex, deploying them on resource-constrained devices poses significant challenges. Tiny Machine Learning (TinyML) addresses this by enabling ultra-compact, low-power AI models suitable for embedded systems and real-time sensor analytics. This workshop will introduce key model compression techniques, including pruning, quantization-aware training, post-training quantization, and knowledge distillation, along with efficient network design strategies. Through a blend of theory and hands-on sessions, participants will learn how to optimize and deploy deep learning models on embedded and mobile platforms, preparing them for practical applications in resource-limited environments.
 
+<!-- 
 ## GNN Tutorial Schedule
 
 | Time Duration         | Description                                      | Resource Person            |
@@ -97,14 +98,14 @@ By the end of the workshop, participants will:
 
 ## Facilitator Profiles
 
-### **Dr. Dharshana Kasthurirathne**
+<!-- ### **Dr. Dharshana Kasthurirathne** -->
 <!-- ![Dr. Dinuka Sahabandu](path/to/image.jpg) -->
-Dharshana Kasthurirathna is an academic and researcher with a Doctor of Philosophy from the Complex Systems Research Group at the University of Sydney, Australia, specializing in complex
+<!-- Dharshana Kasthurirathna is an academic and researcher with a Doctor of Philosophy from the Complex Systems Research Group at the University of Sydney, Australia, specializing in complex
 networks and evolutionary game theory. He also holds a master’s in computer science from the University of Colombo, and a BSc (Hons) in Computer Science and Engineering from the University of Moratuwa. Currently serving as an Assistant Professor at the Department of Computer Science, Faculty of Computing, Sri Lanka Institute of Information Technology (SLIIT), Dharshana’s research interests encompass evolutionary game theory, network science, machine learning, distributed systems, and optimization. In 2022, Dr.Kasthurirathna was the main presenter at the ”Graph Neural Networks: Theory and Applications” workshop, held as part of the 4th Inter-
 national Conference on Advancements in Computing (ICAC). He also obtained a SLIIT research grant in 2023 as the principle investigator for developing a lightweight graph neural network based human action recognition framework. He is also a member of BrAIN Labs research group as well
-as The Center of Excellence for AI (COE-AI) research group at SLIIT.
+as The Center of Excellence for AI (COE-AI) research group at SLIIT. -->
 
-### **Dr. Mahima Weerasighe**
+<!-- ### **Dr. Mahima Weerasighe**
 Mahima Weerasighe obtained a first class honours in B.Eng. in Electronic Engineering from
 Sheffield Hallam University, U.K., in 2011, and the M.Sc. degree in applied electronics from the
 University of Colombo, Sri Lanka, in 2016. He completed his Ph.D. from Auckland University of
@@ -115,11 +116,11 @@ IEEE. His research interests include using artificial intelligence techniques fo
 wellbeing. His current research interests include spiking neural networks, brain data processing,
 and computational neuroscience. He is a researcher of BrAIN Labs, a research and innovation
 consortium established to develop AI solutions for real-world challenges. He is also a member of
-the Center of Excellence for AI (COE-AI) research group at SLIIT
+the Center of Excellence for AI (COE-AI) research group at SLIIT -->
 
-### **Dr. Dinuka Sahabandu**
+<!-- ### **Dr. Dinuka Sahabandu** -->
 <!-- ![Dr. Dinuka Sahabandu](path/to/image.jpg) -->
-Dinuka Sahabandu is a Senior Lecturer (HG) at the Department of Computer Science, Faculty of
+<!-- Dinuka Sahabandu is a Senior Lecturer (HG) at the Department of Computer Science, Faculty of
 Computing, Sri Lanka Institute of Information Technology (SLIIT). He received his Ph.D. from
 the Department of Electrical and Computer Engineering at the University of Washington, Seattle,
 WA, USA. He earned his B.S. and M.S. degrees in Electrical Engineering from Washington State
@@ -128,17 +129,17 @@ security and privacy of machine learning algorithms, applications of game theory
 cybersecurity, and the control of multi-agent networks. He also share an interest in the theoretical
 aspects of graph neural networks and the application of graph neural networks in his research
 domains. He is also a member of BrAIN Labs research group as well as the Center of Excellence
-for AI (COE-AI) research group at SLIIT.
+for AI (COE-AI) research group at SLIIT. -->
 
-### **Mr.Jeewaka Perera**
+<!-- ### **Mr.Jeewaka Perera**
 Jeewaka Perera is a Senior Lecturer in the Department of Computer Science, Faculty of Computing,
 Sri Lanka Institute of Information Technology, Malabe, Sri Lanka. His research interests include multi-objective combinatorial optimization, graph neural networks, and reinforcement learning.
 His ongoing research includes Graph Neurual Networks, Graph Explainability and Biological AI. Mr. Perera received both his BSc. and MSc. in Computer Science from California State University,
-Fresno. He is also a member of BrAIN Labs research group as well as the Center of Excellence for AI (COE-AI) research group at SLIIT.
+Fresno. He is also a member of BrAIN Labs research group as well as the Center of Excellence for AI (COE-AI) research group at SLIIT. -->
 
-### **Mr. Sanka Mohottala**
+<!-- ### **Mr. Sanka Mohottala** -->
 <!-- ![Mr. Sanka Mohottala](path/to/image.jpg) -->
-Sanka Mohottala is a Research Assistant and an MPhil candidate at Department of Computer
+<!-- Sanka Mohottala is a Research Assistant and an MPhil candidate at Department of Computer
 Science, Faculty of Computing ,Sri Lanka Institute of Information Technology (SLIIT). He obtained
 his Bachelors in Electrical and Electronic Engineering in 2021 from SLIIT. His research interest are
 in Graph Neural Networks (GNNs), data-efficient deep learning methods and computer Vision. He
@@ -151,22 +152,22 @@ co-conducted a workshop named ”Graph Neural Networks: Theory and Applications�
 IEEE ICAC Conference. He also obtained a SLIIT research grant in 2023 as the a co-investigator
 for developing a lightweight graph neural network based human action recognition framework. He
 is also a member of BrAIN Labs research group as well as the Center of Excellence for AI (COE-AI)
-research group at SLIIT.
+research group at SLIIT. -->
 
-### **Mr. Asiri Gawesha**
+<!-- ### **Mr. Asiri Gawesha** -->
 <!-- ![Mr. Asiri Gawesha](path/to/image.jpg) -->
-Asiri Gawesha is a Research Assistant and a MPhil candidate at the Department of Software
+<!-- Asiri Gawesha is a Research Assistant and a MPhil candidate at the Department of Software
 Engineering, Faculty of Computing, Sri Lanka Institute of Information Technology (SLIIT). He previously contributing to a World Bank-funded project on the Culturally Sensitive Autism Assessment Tool (CSAAT). He holds a BSc in Electrical and Electronic Engineering from SLIIT,
 obtained in 2021. His research focuses on cutting-edge topics such as image processing, computer vision, edge computing, distributed computing, and cloud computing. His professional achievements include developing AI-powered autism screening tools, optimizing deep learning models for
 edge devices, and leading mobile app integrations for machine learning inference. He has published as an author at conferences like TENCON, CCWC and ICAC and furthermore, he has been involved in peer-review activities for IEEE conferences. He share an interest in graph neural network
 research areas like DeepSets and Transformers and have published work in those domains as well. He is also a member of BrAIN Labs research group as well as the Center of Excellence for AI
-(COE-AI) research group at SLIIT.
+(COE-AI) research group at SLIIT. -->
 
 
 
 
 
-## Details of the presenters of this tutorial  
+<!-- ## Details of the presenters of this tutorial  
 This tutorial is organized by the BrAIN Labs research group at SLIIT. All presenters are members
 of this research group
 
@@ -177,9 +178,9 @@ of this research group
 | Dr. Dinuka Sahabandu          | 0777391621 | dinuka.s@sliit.lk     |
 | Mr. Jeewaka Perera            | 0713771681 | jeewaka.p@sliit.lk    |
 | Mr. Sanka Mohottala           | 0703975286 | sanka.m@sliit.lk      |
-| Mr. Asiri Gawesha             | 0767616895 | asiri.l@sliit.lk      |
+| Mr. Asiri Gawesha             | 0767616895 | asiri.l@sliit.lk      | -->
 
-
+<!-- 
 # Resources
 
  - [W. L. Hamilton, Graph Representation Learning Textbook](https://www.cs.mcgill.ca/~wlh/grl_book/)( freely available text book)
@@ -189,5 +190,5 @@ of this research group
  - [Deep Graph Library Tutorials](https://docs.dgl.ai/guide/index.html) 
  - [Aleksa  Gordic, GNN research paper explanations](https://www.youtube.com/playlist?list=PLBoQnSflObckArGNhOcNg7lQG_f0ZlHF5)
  - [Learning on Graphs Conference, GNN oriented conference](https://logconference.org/)
- - [LoGaG: Learning on Graphs and Geometry Reading Group](https://hannes-stark.com/logag-reading-group) 
+ - [LoGaG: Learning on Graphs and Geometry Reading Group](https://hannes-stark.com/logag-reading-group)  
  -->
