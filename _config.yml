@@ -1,5 +1,5 @@
-title: TinyML: A Compact Revolution in Engineering AI
-description: Moratuwa Engineering Research Conference 2025 (MERCon 2025)- Pre-Conference Workshop
+title: "TinyML: A Compact Revolution in Engineering AI"
+description: "Moratuwa Engineering Research Conference 2025 (MERCon 2025) - Pre-Conference Workshop"
 # show_downloads: true
 # google_analytics:
 theme: jekyll-theme-cayman
@@ -7,5 +7,5 @@ theme: jekyll-theme-cayman
 github:
   zip_url: https://github.com/BrAINLabs-Inc/ICARC_2025_GNN_Tutorial/archive/refs/heads/main.zip
   tar_url: https://icarc.lk/tutorial.php
-show_downloads: true  # This enables the download buttons
 
+show_downloads: true  # This enables the download buttons
