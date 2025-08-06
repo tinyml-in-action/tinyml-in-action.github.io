@@ -83,7 +83,7 @@ By the end of the workshop, participants will:
 
 <!-- **Closing remarks and Q&A**: 10 minutes -->
 
-## Additional useful material
+<!-- ## Additional useful material -->
 
 <!-- | Title | Paper                                                                                     | Slides                                                                                    | Code                                                           | Venue     | Year |
 |---|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------|----------|------|
@@ -96,7 +96,7 @@ By the end of the workshop, participants will:
 | On Popularity Bias of Multimodal-aware Recommender Systems: a Modalities-driven Analysis | [link](https://sisinflab.github.io/tutorial-gnns-recsys-log2023/assets/papers/MM.pdf)     |  [link](https://sisinflab.github.io/tutorial-gnns-recsys-log2023/assets/slides/MMIR.pdf)                                                                                          | [link](https://github.com/sisinflab/MultiMod-Popularity-Bias)  | MMIR @ MM      | 2023 |
 | Formalizing Multimedia Recommendation through Multimodal Deep Learning | [link](https://dl.acm.org/doi/pdf/10.1145/3662738)   |                                                                                           | [link](https://github.com/sisinflab/Formal-MultiMod-Rec)                                                       | arXiv          | 2023 | -->
 
-## Facilitator Profiles
+<!-- ## Facilitator Profiles -->
 
 <!-- ### **Dr. Dharshana Kasthurirathne** -->
 <!-- ![Dr. Dinuka Sahabandu](path/to/image.jpg) -->
@@ -192,3 +192,5 @@ of this research group
  - [Learning on Graphs Conference, GNN oriented conference](https://logconference.org/)
  - [LoGaG: Learning on Graphs and Geometry Reading Group](https://hannes-stark.com/logag-reading-group)  
  -->
+
+Stay tuned!
