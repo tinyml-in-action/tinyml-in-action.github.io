@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- **\[UPDATE\]** We kindly ask you to fill in this [anonymous form](https://docs.google.com/forms/d/e/1FAIpQLSfuq7dJ6yWRrH9HaiWqsnVwQT2zZ_G1mtGSkxErz2kqYdRDqw/viewform?usp=preview) regarding the overall quality of the tutorial. As we are planning to present it to other venues, your feedback might be extremely important for us 🙏🙂 -->
-
+<!-- 
 ## **Facilitators Team**
 <p align="center">
   <table>
@@ -190,4 +190,4 @@ of this research group
  - [Aleksa  Gordic, GNN research paper explanations](https://www.youtube.com/playlist?list=PLBoQnSflObckArGNhOcNg7lQG_f0ZlHF5)
  - [Learning on Graphs Conference, GNN oriented conference](https://logconference.org/)
  - [LoGaG: Learning on Graphs and Geometry Reading Group](https://hannes-stark.com/logag-reading-group) 
-
+ -->
