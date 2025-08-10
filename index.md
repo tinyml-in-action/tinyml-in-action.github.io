@@ -193,4 +193,4 @@ of this research group
  - [LoGaG: Learning on Graphs and Geometry Reading Group](https://hannes-stark.com/logag-reading-group)  
  -->
 
-Stay tuned!
+Stay tuned
