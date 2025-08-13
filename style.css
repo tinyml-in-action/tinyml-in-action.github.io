@@ -154,19 +154,19 @@ a:hover {
 
 @media screen and (min-width: 64em) {
     .project-tagline {
-        font-size: 1.25rem;
+        font-size: 1.4rem;
     }
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
     .project-tagline {
-        font-size: 1.15rem;
+        font-size: 1.3rem;
     }
 }
 
 @media screen and (max-width: 42em) {
     .project-tagline {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -822,3 +822,51 @@ a:hover {
     }
 }
 
+/* Updated tagline section with logos */
+.project-tagline-section {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-tagline {
+    font-weight: normal;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Header logo styling - single Moratuwa logo */
+.header-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.moratuwa-logo {
+    height: 80px;
+    width: auto;
+    opacity: 0.95;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.moratuwa-logo:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for header logo */
+@media screen and (max-width: 768px) {
+    .moratuwa-logo {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .moratuwa-logo {
+        height: 50px;
+    }
+}
