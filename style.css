@@ -154,19 +154,19 @@ a:hover {
 
 @media screen and (min-width: 64em) {
     .project-tagline {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
     .project-tagline {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
 }
 
 @media screen and (max-width: 42em) {
     .project-tagline {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -228,7 +228,7 @@ a:hover {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: #457aae;
+    color: rgb(13, 60, 94);
 }
 
 .main-content h2 {
