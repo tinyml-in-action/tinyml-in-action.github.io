@@ -921,3 +921,8 @@ a:hover {
         height: 50px;
     }
 }
+
+.break-row {
+    background-color: #fff3cd;
+    font-style: italic;
+}
