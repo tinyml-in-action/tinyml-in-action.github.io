@@ -228,7 +228,7 @@ a:hover {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: rgb(13, 60, 94);
+    color: rgb(34, 109, 162);
 }
 
 .main-content h2 {
@@ -501,18 +501,38 @@ a:hover {
     object-fit: cover;
     border-radius: 50%;
 }
-/* ======== LOGOS SECTION ======== */
 
-/* Container for logos: centers horizontally with gap between logos */
+/* ======== LOGOS SECTION ======== */
+.logos-container {
+    display: flex;
+    flex-direction: column;   /* stack rows vertically */
+    align-items: center;      /* center rows horizontally */
+    gap: 30px;               /* space between rows */
+    margin-top: 1.5rem;
+}
+
+/* ======== INDIVIDUAL ROW CONTAINERS ======== */
+/* Container for each row of logos: centers horizontally with gap between logos */
 .logos {
     display: flex;
-    justify-content: center; /* center logos horizontally */
-    align-items: center;     /* center logos vertically */
-    gap: 40px;               /* space between logos */
-    margin-top: 1.5rem;
+    justify-content: center; /* center logos horizontally within row */
+    align-items: center;     /* center logos vertically within row */
+    gap: 40px;               /* space between logos in same row */
     flex-wrap: nowrap;       /* keep all logos in a single row */
 }
 
+/* Optional: Different styling for each row */
+.logos-row-1 {
+    /* First row specific styles if needed */
+    gap: 30px; 
+}
+
+.logos-row-2 {
+    /* Second row specific styles if needed */
+    gap: 60px; /* Example: larger gap between logos in second row */
+}
+
+/* ======== BASE LOGO STYLES ======== */
 /* Base styles for all logo links */
 .logo-link {
     display: inline-block;
@@ -529,24 +549,36 @@ a:hover {
 /* ======== INDIVIDUAL LOGO SIZES ======== */
 /* Change the max-width values below to resize each logo individually */
 
+/* ===== FIRST ROW LOGOS ===== */
 /* Logo 1 (Partner 1) - Currently set to 120px width */
 .logo-size-1 {
-    max-width: 90px;
+    max-width: 120px;
 }
 
 /* Logo 2 (University of Washington) - Currently set to 180px width */
 .logo-size-2 {
-    max-width: 160px;
+    max-width: 180px;
 }
 
 /* Logo 3 (SLIIT) - Currently set to 150px width */
 .logo-size-3 {
-    max-width: 200px;
+    max-width: 230px;
 }
 
 /* Logo 4 (OUSL) - Currently set to 200px width */
 .logo-size-4 {
     max-width: 200px;
+}
+
+/* ===== SECOND ROW LOGOS ===== */
+/* Logo 5 (Partner 5) - Currently set to 160px width */
+.logo-size-5 {
+    max-width: 160px;
+}
+
+/* Logo 6 (Partner 6) - Currently set to 140px width */
+.logo-size-6 {
+    max-width: 160px;
 }
 
 /* ======== HOVER EFFECTS ======== */
@@ -558,17 +590,36 @@ a:hover {
 /* ======== RESPONSIVE DESIGN ======== */
 /* Stack logos vertically on mobile devices */
 @media (max-width: 768px) {
+    .logos-container {
+        gap: 20px; /* reduce gap between rows on mobile */
+    }
+    
     .logos {
-        flex-direction: column; /* stack logos vertically */
-        gap: 20px;             /* reduce gap on mobile */
+        flex-direction: column; /* stack logos vertically within each row */
+        gap: 20px;             /* reduce gap between logos on mobile */
     }
     
     /* Adjust logo sizes for mobile - make them smaller */
     .logo-size-1 { max-width: 100px; }
     .logo-size-2 { max-width: 140px; }
-    .logo-size-3 { max-width: 120px; }
+    .logo-size-3 { max-width: 200px; }
     .logo-size-4 { max-width: 160px; }
+    .logo-size-5 { max-width: 130px; }
+    .logo-size-6 { max-width: 110px; }
 }
+
+/* ======== TABLET RESPONSIVE ======== */
+/* Adjust layout for tablets */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .logos {
+        gap: 30px; /* slightly smaller gap on tablets */
+    }
+    
+    .logos-row-2 {
+        gap: 50px; /* adjust second row gap for tablets */
+    }
+}
+
 
 
 /* ======== FACILITATOR CARDS ======== 
