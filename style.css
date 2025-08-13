@@ -926,3 +926,355 @@ a:hover {
     background-color: #fff3cd;
     font-style: italic;
 }
+
+/* Add these mobile-specific overrides to your existing style.css */
+/* Keep all existing desktop styles unchanged - these are additional mobile improvements */
+
+/* ======== MOBILE-SPECIFIC IMPROVEMENTS ======== */
+
+/* Enhanced mobile responsiveness for header */
+@media screen and (max-width: 480px) {
+    .page-header {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .project-name {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+    
+    .project-tagline {
+        font-size: 1.1rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+    
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        margin: 0.3rem;
+    }
+}
+
+/* Enhanced mobile responsiveness for main content */
+@media screen and (max-width: 480px) {
+    .main-content {
+        padding: 1rem 0.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .main-content h2 {
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .main-content h3 {
+        font-size: 1.1rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .main-content p {
+        margin-bottom: 0.8rem;
+        line-height: 1.4;
+    }
+}
+
+/* Better mobile table handling */
+@media screen and (max-width: 768px) {
+    .main-content table {
+        font-size: 0.7rem;
+        margin: 1rem 0;
+    }
+    
+    .main-content table th,
+    .main-content table td {
+        padding: 0.3rem 0.5rem;
+        white-space: normal;
+        word-break: break-word;
+    }
+    
+    /* Make time columns narrower on mobile */
+    .main-content table th:nth-child(1),
+    .main-content table td:nth-child(1),
+    .main-content table th:nth-child(2),
+    .main-content table td:nth-child(2) {
+        min-width: 80px;
+        font-size: 0.65rem;
+    }
+    
+    /* Make presenter column wrap better */
+    .main-content table th:nth-child(5),
+    .main-content table td:nth-child(5) {
+        min-width: 120px;
+        font-size: 0.7rem;
+    }
+}
+
+/* Ultra-small mobile table */
+@media screen and (max-width: 480px) {
+    .main-content table {
+        font-size: 0.6rem;
+    }
+    
+    .main-content table th,
+    .main-content table td {
+        padding: 0.2rem 0.3rem;
+    }
+    
+    .main-content table th:nth-child(1),
+    .main-content table td:nth-child(1),
+    .main-content table th:nth-child(2),
+    .main-content table td:nth-child(2) {
+        min-width: 70px;
+        font-size: 0.55rem;
+    }
+}
+
+/* Enhanced facilitator cards mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 10px;
+        max-width: 100%;
+    }
+    
+    .facilitator-card {
+        padding: 15px;
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    .facilitator-card img {
+        height: 180px;
+        margin-bottom: 10px;
+    }
+    
+    .facilitator-card .name {
+        font-size: 1rem;
+    }
+    
+    .facilitator-card .affiliation {
+        font-size: 0.85rem;
+        min-height: auto;
+        margin-bottom: 6px;
+    }
+    
+    .facilitator-card .email {
+        font-size: 0.8rem;
+    }
+}
+
+/* Ultra-small mobile facilitator cards */
+@media screen and (max-width: 480px) {
+    .photo-grid {
+        gap: 10px;
+        padding: 0 5px;
+    }
+    
+    .facilitator-card {
+        padding: 12px;
+    }
+    
+    .facilitator-card img {
+        height: 160px;
+    }
+    
+    .facilitator-card .name {
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+    }
+    
+    .facilitator-card .affiliation {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    
+    .facilitator-card .email {
+        font-size: 0.75rem;
+    }
+}
+
+/* Enhanced organizer cards mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .organizer-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .organizer-card {
+        width: 280px;
+        max-width: 90vw;
+    }
+    
+    .organizer-card img {
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .organizer-row {
+        gap: 12px;
+    }
+    
+    .organizer-card {
+        width: 260px;
+        max-width: 95vw;
+        padding: 10px;
+    }
+    
+    .organizer-card img {
+        height: 130px;
+    }
+    
+    .organizer-card .name {
+        font-size: 0.95rem;
+    }
+    
+    .organizer-card .affiliation {
+        font-size: 0.75rem;
+    }
+    
+    .organizer-card .email {
+        font-size: 0.7rem;
+    }
+}
+
+/* Enhanced logos mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .logos-container {
+        gap: 20px;
+        margin-top: 1rem;
+        padding: 0 10px;
+    }
+    
+    .logos {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo-size-1 { max-width: 90px; }
+    .logo-size-2 { max-width: 130px; }
+    .logo-size-3 { max-width: 180px; }
+    .logo-size-4 { max-width: 150px; }
+    .logo-size-5 { max-width: 120px; }
+    .logo-size-6 { max-width: 120px; }
+}
+
+@media screen and (max-width: 480px) {
+    .logos-container {
+        gap: 15px;
+        padding: 0 5px;
+    }
+    
+    .logos {
+        gap: 12px;
+    }
+    
+    .logo-size-1 { max-width: 80px; }
+    .logo-size-2 { max-width: 110px; }
+    .logo-size-3 { max-width: 160px; }
+    .logo-size-4 { max-width: 130px; }
+    .logo-size-5 { max-width: 100px; }
+    .logo-size-6 { max-width: 100px; }
+}
+
+/* Enhanced mobile image responsiveness */
+@media screen and (max-width: 768px) {
+    .center-image {
+        max-width: 90%;
+        margin: 0 auto 0.8rem auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .center-image {
+        max-width: 95%;
+        margin: 0 auto 0.6rem auto;
+    }
+}
+
+/* Mobile-friendly abstract section */
+@media screen and (max-width: 480px) {
+    .abstract-section p {
+        text-align: justify;
+        line-height: 1.4;
+    }
+    
+    .abstract-section h3 {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Enhanced header logo mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .project-tagline-section {
+        gap: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .header-logos {
+        margin-top: 0.3rem;
+    }
+    
+    .moratuwa-logo {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-tagline-section {
+        gap: 0.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .moratuwa-logo {
+        height: 50px;
+    }
+}
+
+/* Enhanced site info mobile responsiveness */
+@media screen and (max-width: 480px) {
+    .site-info {
+        font-size: 0.8rem;
+        line-height: 1.3;
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .site-info p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Mobile-friendly break row styling */
+@media screen and (max-width: 768px) {
+    .break-row td {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.3rem;
+    }
+}
+
+/* Ensure no horizontal scroll on mobile */
+@media screen and (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .main-content {
+        overflow-x: hidden;
+        word-wrap: break-word;
+    }
+    
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
