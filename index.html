@@ -84,13 +84,38 @@
 
 
     <!-- ================= ABSTRACT / CONTENT SECTION ================= -->
-    <h2>Motivation Behind The Workshop</h2>
-    <div class="abstract-section">
-        <img src="assets/Screenshot 2025-08-12 165944.png" alt="Abstract Illustration" class="center-image">
-        <p>As deep learning models become increasingly complex, deploying them on resource-constrained devices poses significant challenges. Tiny Machine Learning (TinyML) addresses this by enabling ultra-compact, low-power AI models suitable for embedded systems and real-time sensor analytics.</p>
-        <p>This workshop will introduce key model compression techniques, including pruning, quantization-aware training, post-training quantization, and knowledge distillation, along with efficient network design strategies.</p>
-        <p>Through theory and hands-on sessions, participants will learn how to optimize and deploy deep learning models on embedded and mobile platforms, preparing them for practical applications in resource-limited environments.</p>
-    </div>
+<h2>Motivation Behind The Workshop</h2>
+<div class="abstract-section">
+   
+    <!-- Introduction -->
+    <p>As deep learning models become increasingly complex, deploying them on resource-constrained devices poses significant challenges. Tiny Machine Learning (TinyML) addresses this by enabling ultra-compact, low-power AI models suitable for embedded systems and real-time sensor analytics.</p>
+    <p>This workshop will introduce key model compression techniques, including pruning, quantization-aware training, post-training quantization, and knowledge distillation, along with efficient network design strategies.</p>
+    <p>Through theory and hands-on sessions, participants will learn how to optimize and deploy deep learning models on embedded and mobile platforms, preparing them for practical applications in resource-limited environments.</p>
+
+    <!-- Key Motivations / Mini Headings -->
+    <h3>1. Academic Research Gap in Sri Lanka</h3>
+<p>
+While TinyML is a rapidly advancing field globally, it remains underexplored in Sri Lanka. To substantiate this, we conducted a comparative analysis of metadata (titles, abstracts, and keywords) from papers published across five major Sri Lankan IEEE conferences (ICAC, ICARC, ICIIS, MERCon, SCSE) and four prominent international IEEE venues (AICAS, EDGE, ISCAS, PERCOM). Figure 1 illustrates this disparity. The codes and data used for this analysis can be accessed via our <a href="https://github.com/sankamohotttala/MERCon_2025_Workshop" style="text-decoration: underline; color: inherit;"> GitHub repository</a>. The workshop aims to bridge this gap by catalyzing local interest in TinyML research and establishing a foundational community in Sri Lanka. We expect this to stimulate not only academic contributions but also the emergence of novel TinyML-based engineering solutions across sectors.
+</p>
+
+     <!-- Graph Image -->
+    <img src="assets/Screenshot 2025-08-12 165944.png" alt="Distribution of research papers in local conferences since 2020" class="center-image">
+       <p style="text-align:center; font-style: italic;">Figure 1</p>
+
+    
+    <h3>2. Democratization of AI</h3>
+    <p>AI technologies such as DeepMind’s AlphaFold, Tesla’s end-to-end autonomous driving stack, and OpenAI’s GPT models have shown how machine learning can revolutionize scientific and engineering processes. However, these breakthroughs are often locked behind massive computational infrastructures accessible only to large corporations. TinyML, with its focus on computation, parameter, and energy efficiency, presents a unique opportunity to democratize AI. By dramatically reducing the cost and hardware requirements for inference, TinyML allows researchers, students, and engineers especially in the global south to integrate AI into real-world engineering workflows. The efficiency paradigm championed by TinyML shifts the focus from centralized, high-cost models to decentralized, low-power systems that enable AI at the edge.</p>
+
+    <h3>3. Relevance to Core Engineering Domains</h3>
+    <p><strong>Civil Engineering:</strong> TinyML enables on-device Structural Health Monitoring (SHM) using vibration, strain, or acoustic signals to detect cracks or material fatigue in bridges and buildings. These systems run on low-power sensor nodes, allowing continuous, long-term infrastructure monitoring without cloud dependency.</p>
+    <p><strong>Biomedical Engineering:</strong> Wearables powered by TinyML can detect arrhythmias, monitor vital signs, and provide real-time diagnostic insights—all processed locally to maintain user privacy and reduce latency.</p>
+    <p><strong>Electrical and Computer Engineering:</strong> Engineers can embed TinyML into smart meters, power grid fault detectors, or environmental sensors to deliver real-time edge analytics. It also aligns with hardware-software co-design practices for neural network accelerators and microcontroller-based inference.</p>
+    <p><strong>Mechanical Engineering:</strong> Predictive maintenance for rotating machinery, acoustic condition monitoring of motors, and anomaly detection in fluid systems are being addressed using TinyML models deployed on embedded devices within factory settings.</p>
+
+    <h3>4. Consumer Product Engineering</h3>
+    <p>TinyML is at the heart of modern consumer applications. Devices like Amazon Alexa rely on TinyML-based keyword spotting models that run continuously to detect wake words with minimal power consumption. Security systems equipped with PIR (Passive Infrared) sensors use TinyML models to classify motion and distinguish human movement from background noise. These applications highlight two critical characteristics: the need for always-on sensing and the need for operation without continuous internet connectivity. Cloud-dependent AI is unsuitable in such cases due to latency, privacy, and power consumption concerns. TinyML, by enabling inference directly on the device, ensures responsiveness, enhances privacy, and supports battery-powered operation—all key for scalable consumer product deployment.</p>
+</div>
+
 
  <!-- ================= AGENDA SECTION ================= -->
 <h2>Workshop Agenda</h2>
