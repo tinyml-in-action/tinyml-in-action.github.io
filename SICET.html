@@ -1,337 +1,216 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TinyML: A Compact Revolution in Engineering AI</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TinyML: A Compact Revolution in Engineering AI</title>
+
+  <!-- EDIT HERE: change fonts if needed -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" crossorigin />
+  <link rel="stylesheet" href="SICETstyle.css" />
 </head>
 
 <body>
-<a id="skip-to-content" href="#content">Skip to the content.</a>
+  <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-<!--<header class="page-header" role="banner">
-    <h1 class="project-name">TinyML: A Compact Revolution in Engineering AI</h1>
-    <h2 class="project-tagline">Moratuwa Engineering Research Conference 2025</h2>
-    <a href="#home" class="btn">Home</a>
-    <a href="YOUR_GITHUB_LINK_HERE" class="btn">View on GitHub</a>
-</header>-->
-<header class="page-header" role="banner">
-    <h1 class="project-name">TinyML: A Compact Revolution in Engineering AI</h1>
-    
+  <!-- HEADER -->
+  <header class="page-header" role="banner" aria-label="Hero header with background">
+    <h1 class="project-name">All Roads Lead to TinyML : Efficient Machine Learning in Engineering</h1>
+
     <div class="project-tagline-section">
-        <h2 class="project-tagline">Moratuwa Engineering Research Conference 2025</h2>
-        
-        <!-- University of Moratuwa Logo -->
-        <div class="header-logos">
-            <a href="https://mercon.uom.lk/" target="_blank">
-            <img src="assets/logo2025 (1).png" 
-                 alt="University of Moratuwa Logo" 
-                 class="header-logo moratuwa-logo">
-        </div>
-    </div>
-    
-    <a href="https://tinyml-in-action.github.io/" class="btn">Home</a>
-    <a href="https://github.com/BrAINLabs-Inc/tiny-ml-in-action-mercon-2025" class="btn">View on GitHub</a>
-</header>
+      <h2 class="project-tagline">SLIIT International Conference on Engineering and Technology 2025</h2>
 
-<main id="content" class="main-content" role="main">
-
-   
-<h2>Facilitators Team</h2>
-<!-- Updated HTML - Remove one facilitator, keep only 5 -->
-<div class="photo-grid"> 
-    <!-- First Row: 2 facilitators --> 
-    <div class="facilitator-card"> 
-        <img src="assets/IMG_2806_v1 (2).jpg" alt="Dr. Samitha Somathilaka"> 
-        <p class="name">Dr. Samitha Somathilaka​</p> 
-        <p class="affiliation">School of Computing​<br>University of Nebraska-Lincoln</p> 
-        <p class="email">ssomathilaka2@unl.edu</p> 
-    </div> 
- 
-    <div class="facilitator-card"> 
-        <img src="assets/Dr. Dinuka.jpg" alt="Facilitator 3"> 
-        <p class="name">Dr. Dinuka Sahabandu</p> 
-        <p class="affiliation">University of Washington (UoW)</p> 
-        <p class="email">sdinuka@uw.edu</p> 
-    </div> 
- 
-    <!-- Second Row: 3 facilitators --> 
- 
-    <div class="facilitator-card"> 
-        <img src="assets/MrA.jpg" alt="Facilitator 5"> 
-        <p class="name">Mr. Asiri Gawesha</p> 
-        <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)​</p>
-        <p class="email">asiri.g@sliit.lk</p> 
-    </div> 
-
-    <div class="facilitator-card"> 
-        <img src="assets/MrS.jpg" alt="Facilitator 4"> 
-        <p class="name">Mr. Sanka Mohottala​</p> 
-        <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p> 
-        <p class="email">sanka.mo@sliit.lk</p> 
-    </div> 
-
-     <div class="facilitator-card"> 
-        <img src="assets/DrM.jpg" alt="Facilitator 2"> 
-        <p class="name">Dr. Mahima Weerasinghe</p> 
-        <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p> 
-        <p class="email">mahima.w@sliit.lk</p> 
-    </div> 
-</div>
-
-
-    <!-- ================= ABSTRACT / CONTENT SECTION ================= -->
-<h2>Motivation Behind The Workshop</h2>
-<div class="abstract-section">
-   
-    <!-- Introduction -->
-    <p>As deep learning models become increasingly complex, deploying them on resource-constrained devices poses significant challenges. Tiny Machine Learning (TinyML) addresses this by enabling ultra-compact, low-power AI models suitable for embedded systems and real-time sensor analytics.</p>
-    <p>This workshop will introduce key model compression techniques, including pruning, quantization-aware training, post-training quantization, and knowledge distillation, along with efficient network design strategies.</p>
-    <p>Through theory and hands-on sessions, participants will learn how to optimize and deploy deep learning models on embedded and mobile platforms, preparing them for practical applications in resource-limited environments.</p>
-
-    <!-- Key Motivations / Mini Headings -->
-    <h3>1. Academic Research Gap in Sri Lanka</h3>
-<p>
-While TinyML is a rapidly advancing field globally, it remains underexplored in Sri Lanka. To substantiate this, we conducted a comparative analysis of metadata (titles, abstracts, and keywords) from papers published across five major Sri Lankan IEEE conferences (ICAC, ICARC, ICIIS, MERCon, SCSE) and four prominent international IEEE venues (AICAS, EDGE, ISCAS, PERCOM). Figure 1 illustrates this disparity. The codes and data used for this analysis can be accessed via our <a href="https://github.com/sankamohotttala/MERCon_2025_Workshop" style="text-decoration: underline; color: inherit;"> GitHub repository</a>. The workshop aims to bridge this gap by catalyzing local interest in TinyML research and establishing a foundational community in Sri Lanka. We expect this to stimulate not only academic contributions but also the emergence of novel TinyML-based engineering solutions across sectors.
-</p>
-
-     <!-- Graph Image -->
-    <img src="assets/Screenshot 2025-08-12 165944.png" alt="Distribution of research papers in local conferences since 2020" class="center-image">
-       <p style="text-align:center; font-style: italic;">Figure 1</p>
-
-    
-    <h3>2. Democratization of AI</h3>
-    <p>AI technologies such as DeepMind’s AlphaFold, Tesla’s end-to-end autonomous driving stack, and OpenAI’s GPT models have shown how machine learning can revolutionize scientific and engineering processes. However, these breakthroughs are often locked behind massive computational infrastructures accessible only to large corporations. TinyML, with its focus on computation, parameter, and energy efficiency, presents a unique opportunity to democratize AI. By dramatically reducing the cost and hardware requirements for inference, TinyML allows researchers, students, and engineers especially in the global south to integrate AI into real-world engineering workflows. The efficiency paradigm championed by TinyML shifts the focus from centralized, high-cost models to decentralized, low-power systems that enable AI at the edge.</p>
-
-    <h3>3. Relevance to Core Engineering Domains</h3>
-    <p><strong>Civil Engineering:</strong> TinyML enables on-device Structural Health Monitoring (SHM) using vibration, strain, or acoustic signals to detect cracks or material fatigue in bridges and buildings. These systems run on low-power sensor nodes, allowing continuous, long-term infrastructure monitoring without cloud dependency.</p>
-    <p><strong>Biomedical Engineering:</strong> Wearables powered by TinyML can detect arrhythmias, monitor vital signs, and provide real-time diagnostic insights—all processed locally to maintain user privacy and reduce latency.</p>
-    <p><strong>Electrical and Computer Engineering:</strong> Engineers can embed TinyML into smart meters, power grid fault detectors, or environmental sensors to deliver real-time edge analytics. It also aligns with hardware-software co-design practices for neural network accelerators and microcontroller-based inference.</p>
-    <p><strong>Mechanical Engineering:</strong> Predictive maintenance for rotating machinery, acoustic condition monitoring of motors, and anomaly detection in fluid systems are being addressed using TinyML models deployed on embedded devices within factory settings.</p>
-
-    <h3>4. Consumer Product Engineering</h3>
-    <p>TinyML is at the heart of modern consumer applications. Devices like Amazon Alexa rely on TinyML-based keyword spotting models that run continuously to detect wake words with minimal power consumption. Security systems equipped with PIR (Passive Infrared) sensors use TinyML models to classify motion and distinguish human movement from background noise. These applications highlight two critical characteristics: the need for always-on sensing and the need for operation without continuous internet connectivity. Cloud-dependent AI is unsuitable in such cases due to latency, privacy, and power consumption concerns. TinyML, by enabling inference directly on the device, ensures responsiveness, enhances privacy, and supports battery-powered operation—all key for scalable consumer product deployment.</p>
-</div>
-
-
- <!-- ================= AGENDA SECTION ================= -->
-<h2>Workshop Agenda</h2>
-<table>
-  <thead>
-    <tr>
-      <th>Start Time</th>
-      <th>End Time</th>
-      <th>Duration (mins)</th>
-      <th>Topic</th>
-      <th>Presenter</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1:00 PM</td>
-      <td>1:05 PM</td>
-      <td>0:05</td>
-      <td>Intro to panel</td>
-      <td>Dr.Dharshana Kasturirathna​</td>
-    </tr>
-    <tr>
-      <td>1:05 PM</td>
-      <td>1:15 PM</td>
-      <td>0:10</td>
-      <td>Introduction to the session</td>
-      <td>Mr.Asiri Lindamulage​</td>
-    </tr>
-    <tr>
-      <td>1:15 PM</td>
-      <td>2:00 PM</td>
-      <td>0:45</td>
-      <td>Wet TinyML</td>
-      <td>Dr.Samitha Somathilaka​</td>
-    </tr>
-    <tr>
-      <td>2:00 PM</td>
-      <td>3:30 PM</td>
-      <td>1:30</td>
-      <td>Model Compression techniques</td>
-      <td>Dr.Dinuka Sahabandu​</td>
-    </tr>
-    <tr class="break-row">
-  <td>3:30 PM</td>
-  <td>3:40 PM</td>
-  <td>0:10</td>
-  <td>Interval</td>
-  <td>—</td>
-</tr>
-    <tr>
-      <td>3:40 PM</td>
-      <td>4:40 PM</td>
-      <td>1:00</td>
-      <td>Coding Session on Model Compression Techniques </td>
-      <td>Mr.Asiri Lindamulage</td>
-    </tr>
-    <tr>
-      <td>4:40 PM</td>
-      <td>5:10 PM</td>
-      <td>0:30</td>
-      <td>Efficiency through Architectural Improvements</td>
-      <td>Mr.Sanka Mohottala​</td>
-    </tr>
-    <tr>
-      <td>5:10 PM</td>
-      <td>5:30 PM</td>
-      <td>0:20</td>
-      <td>Energy Efficient Architectures</td>
-      <td>Dr.Mahima Weerasinghe</td>
-    </tr>
-
-  </tbody>
-</table>
-
-<!-- ================= ORGANIZERS SECTION ================= -->
-<h2>Organizers</h2>
-
-<div class="organizer-row">
-    <div class="organizer-card">
-        <img src="assets/DrD.jpg" alt="Organizer 1">
-        <p class="name">Dr.Dharshana Kasturirathna​</p>
-        <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p>
-        <p class="email">dharshana.k@sliit.lk</p>
+      <!-- EDIT HERE: header logo image / link -->
+      <div class="header-logos">
+        <a href="https://mercon.uom.lk/" target="_blank" rel="noopener">
+          <img src="assets/sicetlogo.png" alt="University of Moratuwa Logo" class="moratuwa-logo" />
+        </a>
+      </div>
     </div>
 
-    <div class="organizer-card">
-        <img src="assets/Dr. Dinuka.jpg" alt="Organizer 2">
-        <p class="name">Dr.Dinuka Sahabandu​</p>
+    <!-- EDIT HERE: header buttons/links -->
+    <nav aria-label="Primary">
+      <a href="index.html" class="btn">Home</a>
+      <a href="https://github.com/BrAINLabs-Inc/tiny-ml-in-action-mercon-2025" class="btn">View on GitHub</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="content" class="main-content" role="main">
+    <!-- FACILITATORS -->
+    <h2>Facilitators Team</h2>
+    <div class="photo-grid">
+      <div class="facilitator-card">
+        <img src="assets/IMG_2806_v1 (2).jpg" alt="Dr. Samitha Somathilaka" />
+        <p class="name">Dr. Samitha Somathilaka</p>
+        <p class="affiliation">School of Computing<br />University of Nebraska–Lincoln</p>
+        <p class="email"><a href="mailto:ssomathilaka2@unl.edu">ssomathilaka2@unl.edu</a></p>
+      </div>
+
+      <div class="facilitator-card">
+        <img src="assets/Dr. Dinuka.jpg" alt="Dr. Dinuka Sahabandu" />
+        <p class="name">Dr. Dinuka Sahabandu</p>
         <p class="affiliation">University of Washington (UoW)</p>
-        <p class="email">sdinuka@uw.edu</p>
-    </div>
+        <p class="email"><a href="mailto:sdinuka@uw.edu">sdinuka@uw.edu</a></p>
+      </div>
 
-    <div class="organizer-card">
-        <img src="assets/DrM.jpg" alt="Organizer 3">
-        <p class="name">Dr. Mahima Weerasinghe</p>
-        <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p>
-        <p class="email">mahima.w@sliit.lk</p>
-    </div>
-</div>
-
-<div class="organizer-row small-row">
-    <div class="organizer-card">
-        <img src="assets/MrA.jpg" alt="Organizer 4">
+      <div class="facilitator-card">
+        <img src="assets/MrA.jpg" alt="Mr. Asiri Gawesha" />
         <p class="name">Mr. Asiri Gawesha</p>
         <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p>
-        <p class="email">asiri.l@sliit.lk</p>
-    </div>
+        <p class="email"><a href="mailto:asiri.g@sliit.lk">asiri.g@sliit.lk</a></p>
+      </div>
 
-    <div class="organizer-card">
-        <img src="assets/MrS.jpg" alt="Organizer 5">
-        <p class="name">Mr. Sanka Mohottalae</p>
+      <div class="facilitator-card">
+        <img src="assets/MrS.jpg" alt="Mr. Sanka Mohottala" />
+        <p class="name">Mr. Sanka Mohottala</p>
         <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p>
-        <p class="email">sanka.m@sliit.lk</p>
-    </div>
+        <p class="email"><a href="mailto:sanka.mo@sliit.lk">sanka.mo@sliit.lk</a></p>
+      </div>
 
-    <div class="organizer-card">
-        <img src="assets/chethiyaa.jpg" alt="Organizer 6">
-        <p class="name">Mr. Chethiya Galkaduwa​</p>
+      <div class="facilitator-card">
+        <img src="assets/DrM.jpg" alt="Dr. Mahima Weerasinghe" />
+        <p class="name">Dr. Mahima Weerasinghe</p>
         <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p>
-        <p class="email">rgalkadu@iu.edu</p>
+        <p class="email"><a href="mailto:mahima.w@sliit.lk">mahima.w@sliit.lk</a></p>
+      </div>
     </div>
 
-    <div class="organizer-card">
-        <img src="assets/Savini.jpg" alt="Organizer 7">
+    <!-- MOTIVATION / ABSTRACT -->
+    <h2>Motivation Behind The Workshop</h2>
+    <div class="abstract-section">
+      <p>As deep learning models become increasingly complex, deploying them on resource-constrained devices poses significant challenges. Tiny Machine Learning (TinyML) enables ultra-compact, low-power AI models suitable for embedded systems and real-time sensor analytics.</p>
+      <p>This workshop covers pruning, quantization-aware training, post-training quantization, knowledge distillation, and efficient network design strategies, with practical deployment on embedded/mobile platforms.</p>
+
+      <h3>1. Academic Research Gap in Sri Lanka</h3>
+      <p>We compared metadata from five Sri Lankan IEEE conferences (ICAC, ICARC, ICIIS, MERCon, SCSE) and four international IEEE venues (AICAS, EDGE, ISCAS, PERCOM) to show the gap. Code/data: <a href="https://github.com/sankamohotttala/MERCon_2025_Workshop">GitHub</a>.</p>
+
+      <!-- EDIT HERE: replace the figure image -->
+      <img src="assets/grapg sciet.png" alt="Distribution of research papers in local conferences since 2020" class="center-image" />
+      <p class="figure-caption">Figure 1</p>
+
+      <h3>2. Democratization of AI</h3>
+      <p>TinyML lowers the cost and hardware needs for inference, enabling AI at the edge with privacy and low latency.</p>
+
+      <h3>3. Relevance to Core Engineering Domains</h3>
+      <p><strong>Civil:</strong> On-device SHM; <strong>Biomedical:</strong> Wearable diagnostics locally; <strong>Electrical/Computer:</strong> Smart meters, grid monitoring; <strong>Mechanical:</strong> Predictive maintenance at the edge.</p>
+
+      <h3>4. Consumer Product Engineering</h3>
+      <p>Always-on sensing (e.g., wake-word detection) and offline operation benefit from TinyML’s power efficiency and privacy.</p>
+    </div>
+
+    <!-- AGENDA -->
+    <h2>Workshop Agenda</h2>
+    <table aria-label="Workshop agenda">
+      <thead>
+        <tr>
+          <th>Start Time</th>
+          <th>End Time</th>
+          <th>Duration (mins)</th>
+          <th>Topic</th>
+          <th>Presenter</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1:00 PM</td><td>1:05 PM</td><td>0:05</td><td>Intro to panel</td><td>Dr. Dharshana Kasturirathna</td></tr>
+        <tr><td>1:05 PM</td><td>1:15 PM</td><td>0:10</td><td>Introduction to the session</td><td>Mr. Asiri Lindamulage</td></tr>
+        <tr><td>1:15 PM</td><td>2:00 PM</td><td>0:45</td><td>Wet TinyML</td><td>Dr. Samitha Somathilaka</td></tr>
+        <tr><td>2:00 PM</td><td>3:30 PM</td><td>1:30</td><td>Model Compression techniques</td><td>Dr. Dinuka Sahabandu</td></tr>
+        <tr class="break-row"><td>3:30 PM</td><td>3:40 PM</td><td>0:10</td><td>Interval</td><td>—</td></tr>
+        <tr><td>3:40 PM</td><td>4:40 PM</td><td>1:00</td><td>Coding Session on Model Compression Techniques</td><td>Mr. Asiri Lindamulage</td></tr>
+        <tr><td>4:40 PM</td><td>5:10 PM</td><td>0:30</td><td>Efficiency through Architectural Improvements</td><td>Mr. Sanka Mohottala</td></tr>
+        <tr><td>5:10 PM</td><td>5:30 PM</td><td>0:20</td><td>Energy Efficient Architectures</td><td>Dr. Mahima Weerasinghe</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ORGANIZERS -->
+    <h2>Organizers</h2>
+    <div class="organizer-row">
+      <div class="organizer-card">
+        <img src="assets/DrD.jpg" alt="Dr. Dharshana Kasturirathna" />
+        <p class="name">Dr. Dharshana Kasturirathna</p>
+        <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p>
+        <p class="email"><a href="mailto:dharshana.k@sliit.lk">dharshana.k@sliit.lk</a></p>
+      </div>
+
+      <div class="organizer-card">
+        <img src="assets/Dr. Dinuka.jpg" alt="Dr. Dinuka Sahabandu" />
+        <p class="name">Dr. Dinuka Sahabandu</p>
+        <p class="affiliation">University of Washington (UoW)</p>
+        <p class="email"><a href="mailto:sdinuka@uw.edu">sdinuka@uw.edu</a></p>
+      </div>
+
+      <div class="organizer-card">
+        <img src="assets/DrM.jpg" alt="Dr. Mahima Weerasinghe" />
+        <p class="name">Dr. Mahima Weerasinghe</p>
+        <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p>
+        <p class="email"><a href="mailto:mahima.w@sliit.lk">mahima.w@sliit.lk</a></p>
+      </div>
+    </div>
+
+    <div class="organizer-row small-row">
+      <div class="organizer-card">
+        <img src="assets/MrA.jpg" alt="Mr. Asiri Gawesha" />
+        <p class="name">Mr. Asiri Gawesha</p>
+        <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p>
+        <p class="email"><a href="mailto:asiri.l@sliit.lk">asiri.l@sliit.lk</a></p>
+      </div>
+
+      <div class="organizer-card">
+        <img src="assets/MrS.jpg" alt="Mr. Sanka Mohottala" />
+        <p class="name">Mr. Sanka Mohottala</p>
+        <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p>
+        <p class="email"><a href="mailto:sanka.m@sliit.lk">sanka.m@sliit.lk</a></p>
+      </div>
+
+      <div class="organizer-card">
+        <img src="assets/chethiyaa.jpg" alt="Mr. Chethiya Galkaduwa" />
+        <p class="name">Mr. Chethiya Galkaduwa</p>
+        <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p>
+        <p class="email"><a href="mailto:rgalkadu@iu.edu">rgalkadu@iu.edu</a></p>
+      </div>
+
+      <div class="organizer-card">
+        <img src="assets/Savini.jpg" alt="Ms. Savini Kommalage" />
         <p class="name">Ms. Savini Kommalage</p>
         <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p>
-        <p class="email">it24100641@my.sliit.lk</p>
-    </div>
-</div>
-
-<br>
-
-<br>
-
-
-
-<!-- ================= LOGOS SECTION ================= -->
-<!-- Main container for all logos organized in rows -->
-<div class="logos-container">
-    
-    <!-- ======== FIRST ROW OF LOGOS ======== -->
-    <!-- Container for first row of partner logos -->
-    <div class="logos logos-row-1">
-        <!-- Logo 1: Partner 1 - Use 'logo-size-1' class for individual sizing -->
-        <a href="" target="_blank" rel="noopener noreferrer" class="logo-link logo-size-1">
-            <img src="assets/pngegg (1).png" alt="Partner 1 Logo">
-        </a>
-        
-        <!-- Logo 2: University of Washington - Use 'logo-size-2' class for individual sizing -->
-        <a href="" target="_blank" rel="noopener noreferrer" class="logo-link logo-size-2">
-            <img src="assets/university-of-washington-logo.png" alt="Partner 2 Logo">
-        </a>
-        
-        <!-- Logo 3: SLIIT - Use 'logo-size-3' class for individual sizing -->
-        <a href="" target="_blank" rel="noopener noreferrer" class="logo-link logo-size-3">
-            <img src="assets/SLIIT (1).png" alt="Partner 3 Logo">
-        </a>
-        
-        <!-- Logo 4: OUSL - Use 'logo-size-4' class for individual sizing -->
-        <a href="" target="_blank" rel="noopener noreferrer" class="logo-link logo-size-4">
-            <img src="assets/ousl-logo-2.png" alt="Partner 4 Logo">
-        </a>
+        <p class="email"><a href="mailto:it24100641@my.sliit.lk">it24100641@my.sliit.lk</a></p>
+      </div>
     </div>
 
-    <!-- ======== SECOND ROW OF LOGOS ======== -->
-    <!-- Container for second row of partner logos -->
-    <div class="logos logos-row-2">
-        <!-- Logo 5: New Partner 5 - Use 'logo-size-5' class for individual sizing -->
-        <a href="" target="_blank" rel="noopener noreferrer" class="logo-link logo-size-5">
-            <img src="assets/BRAIN (1).png" alt="Partner 5 Logo">
-        </a>
-        
-        <!-- Logo 6: New Partner 6 - Use 'logo-size-6' class for individual sizing -->
-        <a href="" target="_blank" rel="noopener noreferrer" class="logo-link logo-size-6">
-            <img src="assets/sliitRlogo.jpg" alt="Partner 6 Logo">
-        </a>
+    <!-- PARTNER LOGOS -->
+    <div class="logos-container">
+      <div class="logos logos-row-1">
+        <!-- EDIT HERE: logo images + sizes via classes -->
+        <a href="#" class="logo-link logo-size-1"><img src="assets/pngegg (1).png" alt="Partner 1" /></a>
+        <a href="#" class="logo-link logo-size-2"><img src="assets/university-of-washington-logo.png" alt="University of Washington" /></a>
+        <a href="#" class="logo-link logo-size-3"><img src="assets/SLIIT (1).png" alt="SLIIT" /></a>
+        <a href="#" class="logo-link logo-size-4"><img src="assets/ousl-logo-2.png" alt="OUSL" /></a>
+      </div>
+      <div class="logos logos-row-2">
+        <a href="#" class="logo-link logo-size-5"><img src="assets/BRAIN (1).png" alt="BrAIN Labs" /></a>
+        <a href="#" class="logo-link logo-size-6"><img src="assets/sliitRlogo.jpg" alt="SLIIT Research" /></a>
+      </div>
     </div>
-    
-</div>
 
-
-
-    <!--<footer class="site-footer">
-        <span class="site-footer-owner">This workshop is organized by <strong>BrAIN Labs</strong> research group at <strong>SLIIT</strong>.</span>
-        <span class="site-footer-credits">Contact: <a href="mailto:asiri.l@sliit.lk">asiri.l@sliit.lk</a> | Part of MERCon 2025 Conference</span>
-    </footer>-->
-
-    <!-- Footer Section -->
+    <!-- FOOTER / SITE INFO -->
     <div class="site-info">
+      <p class="org-text">Organized by BrAINLabs Research Group, SLIIT</p>
+      <p class="funding-text">Funded by SLIIT Research &amp; International (Grant No. PVC(R&amp;I)RG/2025/12)</p>
 
-      <!--Text part-->
-<p style="margin: 0 0 0.75rem 0; color: #343a46; font-size: 1.1rem; font-family: 'Times New Roman', Times, serif; text-align: center;">
-    Organized by BrAINLabs Research Group, SLIIT
-</p>
-<p style="margin: 0 0 1.5rem 0; color: #4a5568; font-size: 1.1rem; font-family: 'Times New Roman', Times, serif; text-align: center;">
-    Funded by SLIIT Research & International (Grant No. PVC(R&I)RG/2025/12)
-</p>
+      <hr />
 
-<br>
-
-     <hr style="border: none; border-top: 1px solid #dce6f0; margin-bottom: 1rem;">
-    
-        <b>This site is created by 
-        <!-- CHANGE CREATOR LINK HERE -->
-        <a href="https://github.com/savinikommalage" id="creator-link"><b>Savini Kommalage</b></a> 
-        and currently maintained by 
-        <!-- CHANGE ORGANIZATION LINK HERE -->
-        <a href="https://github.com/BrAINLabs-Inc" id="organization-link"><b>BrAINLabs Research Group</b></a>. 
-        Original website can be accessed via 
-        <!-- CHANGE ORIGINAL WEBSITE LINK HERE -->
-        <a href="https://github.com/BrAINLabs-Inc/tiny-ml-in-action-mercon-2025" id="original-link"><b>this link</b></a>.<br>
-        This page was generated by 
-        <!-- GitHub Pages link (usually stays the same) -->
-        <a href="https://pages.github.com" id="github-pages-link"><b>GitHub Pages</b></a>.</b>
+      <p>
+        <strong>This site is created by</strong>
+        <a href="https://github.com/savinikommalage">Savini Kommalage</a>
+        <strong>and maintained by</strong>
+        <a href="https://github.com/BrAINLabs-Inc">BrAINLabs Research Group</a>.
+        Original website:
+        <a href="https://github.com/BrAINLabs-Inc/tiny-ml-in-action-mercon-2025">GitHub project</a>.
+      </p>
     </div>
-</main>
+  </main>
 </body>
 </html>
