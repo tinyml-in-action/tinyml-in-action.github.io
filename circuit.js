@@ -3,6 +3,10 @@ const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+// 🎨 Colors
+const nodeColor = "#00184dff";   // Blue nodes
+const lineColor = "#000000ff";   // Light blue lines
+
 let nodes = [];
 const nodeCount = 70;
 const maxDistance = 150;
@@ -15,6 +19,7 @@ class Node {
     this.vy = (Math.random() - 0.5) * 0.6;
     this.radius = 2;
   }
+
   update() {
     this.x += this.vx;
     this.y += this.vy;
@@ -22,10 +27,11 @@ class Node {
     if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
     if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
   }
+
   draw() {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-    ctx.fillStyle = "#2563eb"; // node color (blue)
+    ctx.fillStyle = nodeColor; // Node color
     ctx.fill();
   }
 }
@@ -46,7 +52,8 @@ function connect() {
 
       if (distance < maxDistance) {
         ctx.beginPath();
-        ctx.strokeStyle = "rgba(37,99,235," + (1 - distance / maxDistance) + ")";
+        // Line fades with distance
+        ctx.strokeStyle = `rgba(59, 130, 246, ${1 - distance / maxDistance})`; 
         ctx.lineWidth = 1;
         ctx.moveTo(nodes[i].x, nodes[i].y);
         ctx.lineTo(nodes[j].x, nodes[j].y);
