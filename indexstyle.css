@@ -1,540 +1,169 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    min-height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    background: 
-        radial-gradient(circle at 20% 80%, #1a1a2e 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, #16213e 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, #0f3460 0%, transparent 50%),
-        linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #0a0a0a 100%);
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    color: #ffffff;
-    overflow-x: hidden;
-    position: relative;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+
+  background: #ffffff;
+  color: #111827;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
 }
 
-body::before {
-    content: '';
-    position: fixed;
-    top: -10px;
-    left: -10px;
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    background-image: 
-        /* Complex circuit pathways */
-        url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='circuit' x='0' y='0' width='200' height='200' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%2300ffff' stroke-width='0.5' fill='none' opacity='0.3'%3E%3Cpath d='M20,20 L60,20 L60,60 L140,60 L140,20 L180,20'/%3E%3Cpath d='M20,80 L80,80 L80,120 L120,120 L120,80 L180,80'/%3E%3Cpath d='M20,140 L40,140 L40,100 L160,100 L160,140 L180,140'/%3E%3Cpath d='M80,0 L80,40 L120,40 L120,0'/%3E%3Cpath d='M40,180 L40,160 L160,160 L160,180'/%3E%3Ccircle cx='60' cy='20' r='2' fill='%2300ffff'/%3E%3Ccircle cx='140' cy='60' r='2' fill='%23ff6b6b'/%3E%3Ccircle cx='80' cy='120' r='2' fill='%234ecdc4'/%3E%3Ccircle cx='160' cy='100' r='2' fill='%2300ffff'/%3E%3Crect x='58' y='58' width='4' height='4' fill='%23ff6b6b'/%3E%3Crect x='118' y='118' width='4' height='4' fill='%234ecdc4'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23circuit)'/%3E%3C/svg%3E");
-    background-size: 200px 200px;
-    animation: circuitFlow 30s linear infinite;
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.6;
+/* Canvas Circuit Background */
+#circuit-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  background: #ffffff;
 }
 
-body::after {
-    content: '';
-    position: fixed;
-    top: -10px;
-    left: -10px;
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    background-image: 
-        /* Secondary circuit layer with different pattern */
-        url("data:image/svg+xml,%3Csvg width='150' height='150' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='circuit2' x='0' y='0' width='150' height='150' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%234ecdc4' stroke-width='0.3' fill='none' opacity='0.4'%3E%3Cpath d='M0,75 L30,75 L30,45 L120,45 L120,75 L150,75'/%3E%3Cpath d='M75,0 L75,30 L105,30 L105,120 L75,120 L75,150'/%3E%3Cpath d='M15,15 L45,15 L45,45 L105,45 L105,15 L135,15'/%3E%3Cpath d='M15,135 L45,135 L45,105 L105,105 L105,135 L135,135'/%3E%3Ccircle cx='30' cy='75' r='1.5' fill='%234ecdc4'/%3E%3Ccircle cx='120' cy='45' r='1.5' fill='%23ff6b6b'/%3E%3Ccircle cx='75' cy='30' r='1.5' fill='%2300ffff'/%3E%3Ccircle cx='105' cy='120' r='1.5' fill='%234ecdc4'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23circuit2)'/%3E%3C/svg%3E");
-    background-size: 150px 150px;
-    animation: circuitFlow2 25s linear infinite reverse;
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.4;
+/* Content */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  text-align: center;
 }
 
-@keyframes circuitFlow {
-    0% { 
-        background-position: 0 0;
-        opacity: 0.6;
-    }
-    25% { 
-        background-position: 50px 25px;
-        opacity: 0.8;
-    }
-    50% { 
-        background-position: 100px 50px;
-        opacity: 0.7;
-    }
-    75% { 
-        background-position: 150px 75px;
-        opacity: 0.9;
-    }
-    100% { 
-        background-position: 200px 100px;
-        opacity: 0.6;
-    }
+.page-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+  background: linear-gradient(135deg, #1b3264, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@keyframes circuitFlow2 {
-    0% { 
-        background-position: 0 0;
-        opacity: 0.4;
-    }
-    50% { 
-        background-position: 75px 75px;
-        opacity: 0.6;
-    }
-    100% { 
-        background-position: 150px 150px;
-        opacity: 0.4;
-    }
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
-    z-index: 2;
-}
-
-/* Logo Rows */
-.logo-section {
-    padding: 2rem 0 3rem 0;
-    text-align: center;
-}
-
-.logo-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-}
-
-.logo-item {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    padding: 20px;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
-.logo-item:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-}
-
-.logo-item img {
-    height: 60px;
-    width: auto;
-    filter: brightness(0) invert(1);
-    transition: filter 0.3s ease;
-}
-
-.logo-item:hover img {
-    filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
-}
-
-/* Main Heading */
-.main-heading {
-    text-align: center;
-    padding: 2rem 0 4rem 0;
-}
-
-.main-heading h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    background: linear-gradient(45deg, #ffffff, #f0f0f0, #e0e0e0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    margin-bottom: 1rem;
-    animation: fadeInUp 1s ease-out;
-}
-
-.main-heading p {
-    font-size: 1.4rem;
-    opacity: 0.9;
-    font-weight: 300;
-    animation: fadeInUp 1s ease-out 0.3s both;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Workshop Cards Section */
-.workshops-section {
-    padding: 2rem 0 4rem 0;
-}
-
+/* Workshops Grid */
 .workshops-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 900px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 .workshop-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    padding: 40px 30px;
-    text-align: center;
-    transition: all 0.4s ease;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-}
-
-.workshop-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-    transition: left 0.5s ease;
-}
-
-.workshop-card:hover::before {
-    left: 100%;
+  background: #ffffffcc;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
 }
 
 .workshop-card:hover {
-    transform: translateY(-15px) scale(1.02);
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+/* Logo Container */
+.workshop-logo-placeholder {
+  width: 160px;
+  height: 60px;
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  /* Remove background & border since it's not a placeholder anymore */
+  background: none;
+  border: none;
 }
 
-.workshop-card.empty {
-    opacity: 0.3;
-    cursor: default;
-    background: rgba(255, 255, 255, 0.05);
+/* Logo Image */
+.workshop-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* makes sure the logo scales without distortion */
+  display: block;
 }
 
-.workshop-card.empty:hover {
-    transform: none;
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+
+.workshop-subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1e293b;
 }
 
-.card-logo {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 25px auto;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
+.workshop-text {
+  color: #475569;
+  line-height: 1.7;
+  font-size: 1rem;
 }
 
-.workshop-card:hover .card-logo {
-    transform: scale(1.1);
-    background: rgba(255, 255, 255, 0.2);
+/* Responsive */
+@media (max-width: 900px) {
+  .workshops-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-title {
+    font-size: 2.2rem;
+  }
 }
 
-.card-logo img {
-    width: 50px;
-    height: 50px;
-    filter: brightness(0) invert(1);
+/* Logo Row Styling */
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* space between logos */
+  padding: 20px;
+  background-color: white; /* keep it clean */
+  position: relative;
+  z-index: 2; /* ensure logos stay above canvas */
 }
 
-.card-title {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #ffffff;
+/* General logo styling */
+.logo-img {
+  height: auto;
+  max-height: 60px; /* default size */
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
-.card-subtitle {
-    font-size: 1rem;
-    opacity: 0.8;
-    font-weight: 300;
+.logo-img:hover {
+  transform: scale(1.05);
 }
 
-.coming-soon {
-    color: rgba(255, 255, 255, 0.6);
-    font-style: italic;
-    font-size: 1.2rem;
+/* Individual logo size overrides (adjust as needed) */
+.logo1 { max-height: 80px; }
+.logo2 { max-height: 50px; }
+.logo3 { max-height: 40px; }
+.logo4 { max-height: 35px; }
+.logo5 { max-height: 95px; }
+.logo6 { max-height: 75px; }
+.logo7 { max-height: 80px; }
+
+
+.workshop-logo {
+  max-width: 200px;   /* scale logo */
+  height: auto;       /* keep proportions */
+  display: block;
+  margin: 0 auto;     /* center horizontally */
+}
+.workshop-card {
+  display: block;               /* make anchor behave like a card */
+  background: #ffffffcc;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  text-decoration: none;        /* remove underline */
+  color: inherit;               /* keep text colors */
+  cursor: pointer;
 }
 
-/* Footer */
-.site-info {
-    margin-top: 4rem;
-    padding: 3rem 0 2rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.4;
-    font-size: 0.875rem;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.site-info p {
-    margin: 0 0 0.75rem 0;
-    font-size: 1.1rem;
-}
-
-.site-info a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.site-info a:hover {
-    text-decoration: underline;
-    color: #f0f0f0;
-}
-
-.site-info hr {
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin: 1.5rem 0 1rem 0;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .logo-row {
-        gap: 20px;
-    }
-    
-    .logo-item {
-        padding: 15px;
-    }
-    
-    .logo-item img {
-        height: 45px;
-    }
-
-    .main-heading h1 {
-        font-size: 2.5rem;
-    }
-
-    .main-heading p {
-        font-size: 1.1rem;
-    }
-
-    .workshops-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        max-width: 400px;
-    }
-
-    .workshop-card {
-        padding: 30px 25px;
-    }
-
-    .card-title {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
-
-    .logo-row {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .main-heading h1 {
-        font-size: 2rem;
-    }
-
-    .main-heading p {
-        font-size: 1rem;
-    }
-
-    .workshop-card {
-        padding: 25px 20px;
-    }
-
-    .site-info {
-        font-size: 0.8rem;
-    }
-
-    .site-info p {
-        font-size: 1rem;
-    }
-}
-
-/* Electronic components scattered across the page */
-.microchip {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(45deg, #2d2d2d, #1a1a1a);
-    border: 1px solid #00ffff;
-    border-radius: 2px;
-    z-index: 1;
-    animation: chipGlow 3s ease-in-out infinite;
-}
-
-.microchip::before {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 2px;
-    background: #0a0a0a;
-    border-radius: 1px;
-}
-
-.microchip::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 6px;
-    height: 6px;
-    background: #00ffff;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #00ffff;
-}
-
-.resistor {
-    position: absolute;
-    width: 30px;
-    height: 8px;
-    background: linear-gradient(to right, #8b4513, #daa520, #8b4513);
-    border-radius: 4px;
-    z-index: 1;
-    animation: componentPulse 4s ease-in-out infinite;
-}
-
-.resistor::before,
-.resistor::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    width: 2px;
-    height: 4px;
-    background: #00ffff;
-}
-
-.resistor::before { left: -3px; }
-.resistor::after { right: -3px; }
-
-.capacitor {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    background: radial-gradient(circle, #333, #111);
-    border-radius: 50%;
-    border: 2px solid #ff6b6b;
-    z-index: 1;
-    animation: capacitorCharge 2.5s ease-in-out infinite;
-}
-
-.capacitor::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 4px;
-    height: 4px;
-    background: #ff6b6b;
-    border-radius: 50%;
-    box-shadow: 0 0 8px #ff6b6b;
-}
-
-@keyframes chipGlow {
-    0%, 100% { 
-        box-shadow: 0 0 5px #00ffff;
-        border-color: #00ffff;
-    }
-    50% { 
-        box-shadow: 0 0 15px #00ffff, 0 0 25px #00ffff;
-        border-color: #4ecdc4;
-    }
-}
-
-@keyframes componentPulse {
-    0%, 100% { opacity: 0.7; }
-    50% { opacity: 1; }
-}
-
-@keyframes capacitorCharge {
-    0% { 
-        border-color: #ff6b6b;
-        box-shadow: 0 0 5px #ff6b6b;
-    }
-    50% { 
-        border-color: #ff9999;
-        box-shadow: 0 0 15px #ff6b6b, 0 0 25px #ff6b6b;
-    }
-    100% { 
-        border-color: #ff6b6b;
-        box-shadow: 0 0 5px #ff6b6b;
-    }
-}
-
-/* PCB traces connecting components */
-.pcb-trace {
-    position: absolute;
-    background: linear-gradient(90deg, transparent, #00ffff, transparent);
-    height: 1px;
-    z-index: 1;
-    animation: dataTrace 6s linear infinite;
-}
-
-.pcb-trace.vertical {
-    width: 1px;
-    background: linear-gradient(180deg, transparent, #4ecdc4, transparent);
-}
-
-@keyframes dataTrace {
-    0% { 
-        opacity: 0;
-        transform: scaleX(0);
-    }
-    10% { 
-        opacity: 1;
-        transform: scaleX(1);
-    }
-    90% { 
-        opacity: 1;
-        transform: scaleX(1);
-    }
-    100% { 
-        opacity: 0;
-        transform: scaleX(0);
-    }
+.workshop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }

@@ -1,0 +1,2559 @@
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #606c71;
+}
+
+#skip-to-content {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    top: -10px;
+}
+
+#skip-to-content:focus {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: auto;
+    width: auto;
+    background: #159957;
+    outline: thick solid #159957;
+}
+
+a {
+    color: #1e6bb8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.btn:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn + .btn {
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 64em) {
+    .btn {
+        padding: 0.75rem 1rem;
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .btn {
+        padding: 0.6rem 0.9rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .btn {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .btn + .btn {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+}
+
+/* Page header styles: white text, centered, with green/blue gradient background */
+/*.page-header {
+    color: #fff;
+    text-align: center;
+    background-color: #159957;
+    background-image: linear-gradient(120deg, #155799, #159957);
+}
+    */
+
+
+.page-header {
+    color: #fff;
+    text-align: center;
+    background: url("assets/background.jpeg") center/cover no-repeat;
+}
+
+
+@media screen and (min-width: 64em) {
+    .page-header {
+        padding: 5rem 6rem;
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .page-header {
+        padding: 3rem 4rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .page-header {
+        padding: 2rem 1rem;
+    }
+}
+
+.project-name {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
+
+@media screen and (min-width: 64em) {
+    .project-name {
+        font-size: 3.25rem;
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .project-name {
+        font-size: 2.25rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .project-name {
+        font-size: 1.75rem;
+    }
+}
+
+.project-tagline {
+    margin-bottom: 2rem;
+    font-weight: normal;
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 64em) {
+    .project-tagline {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .project-tagline {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .project-tagline {
+        font-size: 1.4rem;
+    }
+}
+
+.main-content {
+    word-wrap: break-word;
+}
+
+.main-content :first-child {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 64em) {
+    .main-content {
+        max-width: 64rem;
+        padding: 2rem 6rem;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .main-content {
+        padding: 2rem 4rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .main-content {
+        padding: 2rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+.main-content img {
+    max-width: 100%;
+}
+
+/*
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: #457aae;
+}
+*/
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: rgb(34, 109, 162);
+}
+
+.main-content h2 {
+    font-weight: 600;
+    border-bottom: 2px solid #dce6f0;
+    padding-bottom: 0.5rem;
+}
+.main-content p {
+    margin-bottom: 1em;
+}
+
+.main-content code {
+    padding: 2px 4px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.9rem;
+    color: #567482;
+    background-color: #f3f6fa;
+    border-radius: 0.3rem;
+}
+
+.main-content pre {
+    padding: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: #567482;
+    word-wrap: normal;
+    background-color: #f3f6fa;
+    border: solid 1px #dce6f0;
+    border-radius: 0.3rem;
+}
+
+.main-content pre > code {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #567482;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+}
+
+.main-content .highlight {
+    margin-bottom: 1rem;
+}
+
+.main-content .highlight pre {
+    margin-bottom: 0;
+    word-break: normal;
+}
+
+.main-content .highlight pre,
+.main-content pre {
+    padding: 0.8rem;
+    overflow: auto;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    border-radius: 0.3rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.main-content pre code,
+.main-content pre tt {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+}
+
+.main-content pre code:before,
+.main-content pre code:after,
+.main-content pre tt:before,
+.main-content pre tt:after {
+    content: normal;
+}
+
+.main-content ul,
+.main-content ol {
+    margin-top: 0;
+}
+
+.main-content blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: #819198;
+    border-left: 0.3rem solid #dce6f0;
+}
+
+.main-content blockquote > :first-child {
+    margin-top: 0;
+}
+
+.main-content blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+/*Old table styles
+.main-content table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+    -webkit-overflow-scrolling: touch;
+}
+
+.main-content table th {
+    font-weight: bold;
+}
+
+.main-content table th,
+.main-content table td {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e9ebec;
+}
+*/.main-content table {
+    display: table;
+    margin: 0 auto; /* centers the table */
+    border-collapse: collapse;
+    table-layout: auto;
+    font-size: 0.9rem; /* makes text slightly smaller */
+}
+
+.main-content table th,
+.main-content table td {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e9ebec;
+    white-space: nowrap; /* keep text on one line */
+    text-align: center; /* center text inside cells */
+}
+
+/* Optional: wider time columns */
+.main-content table th:nth-child(1),
+.main-content table td:nth-child(1),
+.main-content table th:nth-child(2),
+.main-content table td:nth-child(2) {
+    min-width: 130px;
+}
+
+/* Optional: wider presenter column */
+.main-content table th:nth-child(5),
+.main-content table td:nth-child(5) {
+    min-width: 160px;
+}
+
+
+.main-content dl {
+    padding: 0;
+}
+
+.main-content dl dt {
+    padding: 0;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.main-content dl dd {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.main-content hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: #eff0f1;
+    border: 0;
+}
+
+/* ======== SITE FOOTER ======== 
+
+.site-footer {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: solid 1px #eff0f1;
+}
+
+.site-footer-owner {
+    display: block;
+    font-weight: bold;
+}
+
+.site-footer-credits {
+    color: #819198;
+}
+    */
+    /* Footer styling */
+/* Footer styling */
+.site-info {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: solid 3px #eff0f1;
+    color: #819198;
+    line-height: 1.4;
+    font-size: 0.875rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Links in the footer */
+.site-info a {
+    color: #0969da;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.site-info a:hover {
+    color: #0550ae;
+}
+
+/* Links in the footer */
+.site-info a {
+    color: #0969da;
+    text-decoration: none;
+}
+
+.site-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* ======== FACILITATORS PHOTO GRID ======== 
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 2rem;
+}
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}*/
+/* ======== FACILITATOR CARDS ======== */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns for flexible layout */
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+/* First two cards span 3 columns each (making them larger) */
+.facilitator-card:nth-child(1),
+.facilitator-card:nth-child(2) {
+    grid-column: span 3;
+}
+
+/* Cards 3, 4, 5, 6 span 2 columns each (making them smaller) */
+.facilitator-card:nth-child(n+3) {
+    grid-column: span 2;
+}
+
+/* ======== ABSTRACT SECTION ======== */
+.center-image {
+    display: block;
+    margin: 0 auto 1rem auto;
+    max-width: 400px;
+}
+
+/* ======== ORGANIZERS TABLE PHOTOS ======== */
+.organizer-photo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* ======== LOGOS SECTION ======== */
+.logos-container {
+    display: flex;
+    flex-direction: column;   /* stack rows vertically */
+    align-items: center;      /* center rows horizontally */
+    gap: 30px;               /* space between rows */
+    margin-top: 1.5rem;
+}
+
+/* ======== INDIVIDUAL ROW CONTAINERS ======== */
+/* Container for each row of logos: centers horizontally with gap between logos */
+.logos {
+    display: flex;
+    justify-content: center; /* center logos horizontally within row */
+    align-items: center;     /* center logos vertically within row */
+    gap: 40px;               /* space between logos in same row */
+    flex-wrap: nowrap;       /* keep all logos in a single row */
+}
+
+/* Optional: Different styling for each row */
+.logos-row-1 {
+    /* First row specific styles if needed */
+    gap: 30px; 
+}
+
+.logos-row-2 {
+    /* Second row specific styles if needed */
+    gap: 60px; /* Example: larger gap between logos in second row */
+}
+
+/* ======== BASE LOGO STYLES ======== */
+/* Base styles for all logo links */
+.logo-link {
+    display: inline-block;
+    transition: transform 0.3s ease; /* subtle hover effect */
+}
+
+/* Base styles for all logo images */
+.logo-link img {
+    width: 100%;             /* make img fill its container */
+    height: auto;            /* maintain aspect ratio */
+    display: block;          /* remove inline gap */
+}
+
+/* ======== INDIVIDUAL LOGO SIZES ======== */
+/* Change the max-width values below to resize each logo individually */
+
+/* ===== FIRST ROW LOGOS ===== */
+/* Logo 1 (Partner 1) - Currently set to 120px width */
+.logo-size-1 {
+    max-width: 120px;
+}
+
+/* Logo 2 (University of Washington) - Currently set to 180px width */
+.logo-size-2 {
+    max-width: 180px;
+}
+
+/* Logo 3 (SLIIT) - Currently set to 150px width */
+.logo-size-3 {
+    max-width: 230px;
+}
+
+/* Logo 4 (OUSL) - Currently set to 200px width */
+.logo-size-4 {
+    max-width: 200px;
+}
+
+/* ===== SECOND ROW LOGOS ===== */
+/* Logo 5 (Partner 5) - Currently set to 160px width */
+.logo-size-5 {
+    max-width: 160px;
+}
+
+/* Logo 6 (Partner 6) - Currently set to 140px width */
+.logo-size-6 {
+    max-width: 160px;
+}
+
+/* ======== HOVER EFFECTS ======== */
+/* Optional: subtle scale effect on hover for all logos */
+.logo-link:hover {
+    transform: scale(1.05);
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+/* Stack logos vertically on mobile devices */
+@media (max-width: 768px) {
+    .logos-container {
+        gap: 20px; /* reduce gap between rows on mobile */
+    }
+    
+    .logos {
+        flex-direction: column; /* stack logos vertically within each row */
+        gap: 20px;             /* reduce gap between logos on mobile */
+    }
+    
+    /* Adjust logo sizes for mobile - make them smaller */
+    .logo-size-1 { max-width: 100px; }
+    .logo-size-2 { max-width: 140px; }
+    .logo-size-3 { max-width: 200px; }
+    .logo-size-4 { max-width: 160px; }
+    .logo-size-5 { max-width: 130px; }
+    .logo-size-6 { max-width: 110px; }
+}
+
+/* ======== TABLET RESPONSIVE ======== */
+/* Adjust layout for tablets */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .logos {
+        gap: 30px; /* slightly smaller gap on tablets */
+    }
+    
+    .logos-row-2 {
+        gap: 50px; /* adjust second row gap for tablets */
+    }
+}
+
+
+
+/* ======== FACILITATOR CARDS ======== 
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.facilitator-card {
+    text-align: center;
+}
+
+/*
+.facilitator-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.facilitator-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #e9ebec;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.385);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.facilitator-card img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.385);
+}
+
+.facilitator-card p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.facilitator-card .name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.facilitator-card .affiliation {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.facilitator-card .email {
+    font-size: 0.85rem;
+    color: #1e6bb8;
+}
+*/
+
+/* ======== FACILITATOR CARDS ======== */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6-column grid for flexibility */
+    gap: 25px;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+/* First row: 2 cards, each spanning 3 columns */
+.facilitator-card:nth-child(1),
+.facilitator-card:nth-child(2) {
+    grid-column: span 3;
+}
+
+/* Second row: 3 cards, each spanning 2 columns */
+.facilitator-card:nth-child(3),
+.facilitator-card:nth-child(4),
+.facilitator-card:nth-child(5) {
+    grid-column: span 2;
+}
+
+.facilitator-card {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: none; /* Remove max-width restriction */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.facilitator-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Default styling for all images */
+.facilitator-card img {
+    width: 100%;
+    height: 200px; /* Default height for second row */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 2px solid #f0f0f0;
+}
+
+/* Special styling only for first row images (cards 1 and 2) */
+.facilitator-card:nth-child(1) img,
+.facilitator-card:nth-child(2) img {
+    height: 270px; /* Larger height for first row */
+    object-position: center top; /* Better positioning for first row portraits */
+}
+
+.facilitator-card .name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1b4d89; /* Conference blue tone */
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.facilitator-card .affiliation {
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    min-height: 40px; /* Ensures consistent spacing even with different text lengths */
+}
+
+.facilitator-card .email {
+    font-size: 0.85rem;
+    color: #666666; /* gray-ish color */
+    font-weight: bold;
+    word-break: break-word;
+    text-decoration: none; /* no underline */
+    transition: none; /* remove color transition */
+}
+
+.facilitator-card .email:hover {
+    text-decoration: none; /* no underline on hover */
+    color: #666666; /* keep same gray on hover */
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .facilitator-card:nth-child(1),
+    .facilitator-card:nth-child(2),
+    .facilitator-card:nth-child(3),
+    .facilitator-card:nth-child(4),
+    .facilitator-card:nth-child(5) {
+        grid-column: span 1;
+    }
+    
+    .facilitator-card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* ======== ORGANIZERS GRID ======== */
+.organizer-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.organizer-card {
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.organizer-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.organizer-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.organizer-card .name {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #1b4d89;
+    margin-bottom: 4px;
+}
+
+.organizer-card .position {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.organizer-card .affiliation {
+    font-size: 0.78rem;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.organizer-card .email {
+    font-size: 0.75rem;
+    color: #666666; /* gray-ish */
+    font-weight: bold;
+    word-break: break-word;
+    text-decoration: none; /* no underline */
+    transition: none; /* no hover color transition */
+}
+
+.organizer-card .email:hover {
+    text-decoration: none; /* no underline on hover */
+    color: #666666; /* keep same gray color on hover */
+}
+
+
+/* First row: bigger cards */
+.organizer-row:not(.small-row) .organizer-card {
+    width: 250px;
+}
+
+/* Second row: slightly smaller to fit 4 */
+.small-row .organizer-card {
+    width: 200px;
+}
+
+/* Responsive: stack on small screens */
+@media screen and (max-width: 768px) {
+    .organizer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Updated tagline section with logos */
+.project-tagline-section {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-tagline {
+    font-weight: normal;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Header logo styling - single Moratuwa logo */
+.header-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.moratuwa-logo {
+    height: 80px;
+    width: auto;
+    opacity: 0.95;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.moratuwa-logo:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for header logo */
+@media screen and (max-width: 768px) {
+    .moratuwa-logo {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .moratuwa-logo {
+        height: 50px;
+    }
+}
+
+.break-row {
+    background-color: #fff3cd;
+    font-style: italic;
+}
+
+/* Add these mobile-specific overrides to your existing style.css */
+/* Keep all existing desktop styles unchanged - these are additional mobile improvements */
+
+/* ======== MOBILE-SPECIFIC IMPROVEMENTS ======== */
+
+/* Enhanced mobile responsiveness for header */
+@media screen and (max-width: 480px) {
+    .page-header {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .project-name {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+    
+    .project-tagline {
+        font-size: 1.1rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+    
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        margin: 0.3rem;
+    }
+}
+
+/* Enhanced mobile responsiveness for main content */
+@media screen and (max-width: 480px) {
+    .main-content {
+        padding: 1rem 0.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .main-content h2 {
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .main-content h3 {
+        font-size: 1.1rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .main-content p {
+        margin-bottom: 0.8rem;
+        line-height: 1.4;
+    }
+}
+
+/* Better mobile table handling */
+@media screen and (max-width: 768px) {
+    .main-content table {
+        font-size: 0.7rem;
+        margin: 1rem 0;
+    }
+    
+    .main-content table th,
+    .main-content table td {
+        padding: 0.3rem 0.5rem;
+        white-space: normal;
+        word-break: break-word;
+    }
+    
+    /* Make time columns narrower on mobile */
+    .main-content table th:nth-child(1),
+    .main-content table td:nth-child(1),
+    .main-content table th:nth-child(2),
+    .main-content table td:nth-child(2) {
+        min-width: 80px;
+        font-size: 0.65rem;
+    }
+    
+    /* Make presenter column wrap better */
+    .main-content table th:nth-child(5),
+    .main-content table td:nth-child(5) {
+        min-width: 120px;
+        font-size: 0.7rem;
+    }
+}
+
+/* Ultra-small mobile table */
+@media screen and (max-width: 480px) {
+    .main-content table {
+        font-size: 0.6rem;
+    }
+    
+    .main-content table th,
+    .main-content table td {
+        padding: 0.2rem 0.3rem;
+    }
+    
+    .main-content table th:nth-child(1),
+    .main-content table td:nth-child(1),
+    .main-content table th:nth-child(2),
+    .main-content table td:nth-child(2) {
+        min-width: 70px;
+        font-size: 0.55rem;
+    }
+}
+
+/* Enhanced facilitator cards mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 10px;
+        max-width: 100%;
+    }
+    
+    .facilitator-card {
+        padding: 15px;
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    .facilitator-card img {
+        height: 180px;
+        margin-bottom: 10px;
+    }
+    
+    .facilitator-card .name {
+        font-size: 1rem;
+    }
+    
+    .facilitator-card .affiliation {
+        font-size: 0.85rem;
+        min-height: auto;
+        margin-bottom: 6px;
+    }
+    
+    .facilitator-card .email {
+        font-size: 0.8rem;
+    }
+}
+
+/* Ultra-small mobile facilitator cards */
+@media screen and (max-width: 480px) {
+    .photo-grid {
+        gap: 10px;
+        padding: 0 5px;
+    }
+    
+    .facilitator-card {
+        padding: 12px;
+    }
+    
+    .facilitator-card img {
+        height: 160px;
+    }
+    
+    .facilitator-card .name {
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+    }
+    
+    .facilitator-card .affiliation {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    
+    .facilitator-card .email {
+        font-size: 0.75rem;
+    }
+}
+
+/* Enhanced organizer cards mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .organizer-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .organizer-card {
+        width: 280px;
+        max-width: 90vw;
+    }
+    
+    .organizer-card img {
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .organizer-row {
+        gap: 12px;
+    }
+    
+    .organizer-card {
+        width: 260px;
+        max-width: 95vw;
+        padding: 10px;
+    }
+    
+    .organizer-card img {
+        height: 130px;
+    }
+    
+    .organizer-card .name {
+        font-size: 0.95rem;
+    }
+    
+    .organizer-card .affiliation {
+        font-size: 0.75rem;
+    }
+    
+    .organizer-card .email {
+        font-size: 0.7rem;
+    }
+}
+
+/* Enhanced logos mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .logos-container {
+        gap: 20px;
+        margin-top: 1rem;
+        padding: 0 10px;
+    }
+    
+    .logos {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo-size-1 { max-width: 90px; }
+    .logo-size-2 { max-width: 130px; }
+    .logo-size-3 { max-width: 180px; }
+    .logo-size-4 { max-width: 150px; }
+    .logo-size-5 { max-width: 120px; }
+    .logo-size-6 { max-width: 120px; }
+}
+
+@media screen and (max-width: 480px) {
+    .logos-container {
+        gap: 15px;
+        padding: 0 5px;
+    }
+    
+    .logos {
+        gap: 12px;
+    }
+    
+    .logo-size-1 { max-width: 80px; }
+    .logo-size-2 { max-width: 110px; }
+    .logo-size-3 { max-width: 160px; }
+    .logo-size-4 { max-width: 130px; }
+    .logo-size-5 { max-width: 100px; }
+    .logo-size-6 { max-width: 100px; }
+}
+
+/* Enhanced mobile image responsiveness */
+@media screen and (max-width: 768px) {
+    .center-image {
+        max-width: 90%;
+        margin: 0 auto 0.8rem auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .center-image {
+        max-width: 95%;
+        margin: 0 auto 0.6rem auto;
+    }
+}
+
+/* Mobile-friendly abstract section */
+@media screen and (max-width: 480px) {
+    .abstract-section p {
+        text-align: justify;
+        line-height: 1.4;
+    }
+    
+    .abstract-section h3 {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Enhanced header logo mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .project-tagline-section {
+        gap: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .header-logos {
+        margin-top: 0.3rem;
+    }
+    
+    .moratuwa-logo {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-tagline-section {
+        gap: 0.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .moratuwa-logo {
+        height: 50px;
+    }
+}
+
+/* Enhanced site info mobile responsiveness */
+@media screen and (max-width: 480px) {
+    .site-info {
+        font-size: 0.8rem;
+        line-height: 1.3;
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .site-info p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Mobile-friendly break row styling */
+@media screen and (max-width: 768px) {
+    .break-row td {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.3rem;
+    }
+}
+
+/* Ensure no horizontal scroll on mobile */
+@media screen and (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .main-content {
+        overflow-x: hidden;
+        word-wrap: break-word;
+    }
+    
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #606c71;
+}
+
+#skip-to-content {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    top: -10px;
+}
+
+#skip-to-content:focus {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: auto;
+    width: auto;
+    background: #159957;
+    outline: thick solid #159957;
+}
+
+a {
+    color: #1e6bb8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.btn:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn + .btn {
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 64em) {
+    .btn {
+        padding: 0.75rem 1rem;
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .btn {
+        padding: 0.6rem 0.9rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .btn {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .btn + .btn {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+}
+
+/* Page header styles: white text, centered, with green/blue gradient background */
+/*.page-header {
+    color: #fff;
+    text-align: center;
+    background-color: #159957;
+    background-image: linear-gradient(120deg, #155799, #159957);
+}
+    */
+
+
+.page-header {
+    color: #fff;
+    text-align: center;
+    background: url("assets/background.jpeg") center/cover no-repeat;
+}
+
+
+@media screen and (min-width: 64em) {
+    .page-header {
+        padding: 5rem 6rem;
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .page-header {
+        padding: 3rem 4rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .page-header {
+        padding: 2rem 1rem;
+    }
+}
+
+.project-name {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
+
+@media screen and (min-width: 64em) {
+    .project-name {
+        font-size: 3.25rem;
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .project-name {
+        font-size: 2.25rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .project-name {
+        font-size: 1.75rem;
+    }
+}
+
+.project-tagline {
+    margin-bottom: 2rem;
+    font-weight: normal;
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 64em) {
+    .project-tagline {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .project-tagline {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .project-tagline {
+        font-size: 1.4rem;
+    }
+}
+
+.main-content {
+    word-wrap: break-word;
+}
+
+.main-content :first-child {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 64em) {
+    .main-content {
+        max-width: 64rem;
+        padding: 2rem 6rem;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .main-content {
+        padding: 2rem 4rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .main-content {
+        padding: 2rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+.main-content img {
+    max-width: 100%;
+}
+
+/*
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: #457aae;
+}
+*/
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: rgb(34, 109, 162);
+}
+
+.main-content h2 {
+    font-weight: 600;
+    border-bottom: 2px solid #dce6f0;
+    padding-bottom: 0.5rem;
+}
+.main-content p {
+    margin-bottom: 1em;
+}
+
+.main-content code {
+    padding: 2px 4px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.9rem;
+    color: #567482;
+    background-color: #f3f6fa;
+    border-radius: 0.3rem;
+}
+
+.main-content pre {
+    padding: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: #567482;
+    word-wrap: normal;
+    background-color: #f3f6fa;
+    border: solid 1px #dce6f0;
+    border-radius: 0.3rem;
+}
+
+.main-content pre > code {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #567482;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+}
+
+.main-content .highlight {
+    margin-bottom: 1rem;
+}
+
+.main-content .highlight pre {
+    margin-bottom: 0;
+    word-break: normal;
+}
+
+.main-content .highlight pre,
+.main-content pre {
+    padding: 0.8rem;
+    overflow: auto;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    border-radius: 0.3rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.main-content pre code,
+.main-content pre tt {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+}
+
+.main-content pre code:before,
+.main-content pre code:after,
+.main-content pre tt:before,
+.main-content pre tt:after {
+    content: normal;
+}
+
+.main-content ul,
+.main-content ol {
+    margin-top: 0;
+}
+
+.main-content blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: #819198;
+    border-left: 0.3rem solid #dce6f0;
+}
+
+.main-content blockquote > :first-child {
+    margin-top: 0;
+}
+
+.main-content blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+/*Old table styles
+.main-content table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+    -webkit-overflow-scrolling: touch;
+}
+
+.main-content table th {
+    font-weight: bold;
+}
+
+.main-content table th,
+.main-content table td {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e9ebec;
+}
+*/.main-content table {
+    display: table;
+    margin: 0 auto; /* centers the table */
+    border-collapse: collapse;
+    table-layout: auto;
+    font-size: 0.9rem; /* makes text slightly smaller */
+}
+
+.main-content table th,
+.main-content table td {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e9ebec;
+    white-space: nowrap; /* keep text on one line */
+    text-align: center; /* center text inside cells */
+}
+
+/* Optional: wider time columns */
+.main-content table th:nth-child(1),
+.main-content table td:nth-child(1),
+.main-content table th:nth-child(2),
+.main-content table td:nth-child(2) {
+    min-width: 130px;
+}
+
+/* Optional: wider presenter column */
+.main-content table th:nth-child(5),
+.main-content table td:nth-child(5) {
+    min-width: 160px;
+}
+
+
+.main-content dl {
+    padding: 0;
+}
+
+.main-content dl dt {
+    padding: 0;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.main-content dl dd {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.main-content hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: #eff0f1;
+    border: 0;
+}
+
+/* ======== SITE FOOTER ======== 
+
+.site-footer {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: solid 1px #eff0f1;
+}
+
+.site-footer-owner {
+    display: block;
+    font-weight: bold;
+}
+
+.site-footer-credits {
+    color: #819198;
+}
+    */
+    /* Footer styling */
+/* Footer styling */
+.site-info {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: solid 3px #eff0f1;
+    color: #819198;
+    line-height: 1.4;
+    font-size: 0.875rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Links in the footer */
+.site-info a {
+    color: #0969da;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.site-info a:hover {
+    color: #0550ae;
+}
+
+/* Links in the footer */
+.site-info a {
+    color: #0969da;
+    text-decoration: none;
+}
+
+.site-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* ======== FACILITATORS PHOTO GRID ======== 
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 2rem;
+}
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}*/
+/* ======== FACILITATOR CARDS ======== */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns for flexible layout */
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+/* First two cards span 3 columns each (making them larger) */
+.facilitator-card:nth-child(1),
+.facilitator-card:nth-child(2) {
+    grid-column: span 3;
+}
+
+/* Cards 3, 4, 5, 6 span 2 columns each (making them smaller) */
+.facilitator-card:nth-child(n+3) {
+    grid-column: span 2;
+}
+
+/* ======== ABSTRACT SECTION ======== */
+.center-image {
+    display: block;
+    margin: 0 auto 1rem auto;
+    max-width: 400px;
+}
+
+/* ======== ORGANIZERS TABLE PHOTOS ======== */
+.organizer-photo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* ======== LOGOS SECTION ======== */
+.logos-container {
+    display: flex;
+    flex-direction: column;   /* stack rows vertically */
+    align-items: center;      /* center rows horizontally */
+    gap: 30px;               /* space between rows */
+    margin-top: 1.5rem;
+}
+
+/* ======== INDIVIDUAL ROW CONTAINERS ======== */
+/* Container for each row of logos: centers horizontally with gap between logos */
+.logos {
+    display: flex;
+    justify-content: center; /* center logos horizontally within row */
+    align-items: center;     /* center logos vertically within row */
+    gap: 40px;               /* space between logos in same row */
+    flex-wrap: nowrap;       /* keep all logos in a single row */
+}
+
+/* Optional: Different styling for each row */
+.logos-row-1 {
+    /* First row specific styles if needed */
+    gap: 30px; 
+}
+
+.logos-row-2 {
+    /* Second row specific styles if needed */
+    gap: 60px; /* Example: larger gap between logos in second row */
+}
+
+/* ======== BASE LOGO STYLES ======== */
+/* Base styles for all logo links */
+.logo-link {
+    display: inline-block;
+    transition: transform 0.3s ease; /* subtle hover effect */
+}
+
+/* Base styles for all logo images */
+.logo-link img {
+    width: 100%;             /* make img fill its container */
+    height: auto;            /* maintain aspect ratio */
+    display: block;          /* remove inline gap */
+}
+
+/* ======== INDIVIDUAL LOGO SIZES ======== */
+/* Change the max-width values below to resize each logo individually */
+
+/* ===== FIRST ROW LOGOS ===== */
+/* Logo 1 (Partner 1) - Currently set to 120px width */
+.logo-size-1 {
+    max-width: 120px;
+}
+
+/* Logo 2 (University of Washington) - Currently set to 180px width */
+.logo-size-2 {
+    max-width: 180px;
+}
+
+/* Logo 3 (SLIIT) - Currently set to 150px width */
+.logo-size-3 {
+    max-width: 230px;
+}
+
+/* Logo 4 (OUSL) - Currently set to 200px width */
+.logo-size-4 {
+    max-width: 200px;
+}
+
+/* ===== SECOND ROW LOGOS ===== */
+/* Logo 5 (Partner 5) - Currently set to 160px width */
+.logo-size-5 {
+    max-width: 160px;
+}
+
+/* Logo 6 (Partner 6) - Currently set to 140px width */
+.logo-size-6 {
+    max-width: 160px;
+}
+
+/* ======== HOVER EFFECTS ======== */
+/* Optional: subtle scale effect on hover for all logos */
+.logo-link:hover {
+    transform: scale(1.05);
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+/* Stack logos vertically on mobile devices */
+@media (max-width: 768px) {
+    .logos-container {
+        gap: 20px; /* reduce gap between rows on mobile */
+    }
+    
+    .logos {
+        flex-direction: column; /* stack logos vertically within each row */
+        gap: 20px;             /* reduce gap between logos on mobile */
+    }
+    
+    /* Adjust logo sizes for mobile - make them smaller */
+    .logo-size-1 { max-width: 100px; }
+    .logo-size-2 { max-width: 140px; }
+    .logo-size-3 { max-width: 200px; }
+    .logo-size-4 { max-width: 160px; }
+    .logo-size-5 { max-width: 130px; }
+    .logo-size-6 { max-width: 110px; }
+}
+
+/* ======== TABLET RESPONSIVE ======== */
+/* Adjust layout for tablets */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .logos {
+        gap: 30px; /* slightly smaller gap on tablets */
+    }
+    
+    .logos-row-2 {
+        gap: 50px; /* adjust second row gap for tablets */
+    }
+}
+
+
+
+/* ======== FACILITATOR CARDS ======== 
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.facilitator-card {
+    text-align: center;
+}
+
+/*
+.facilitator-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.facilitator-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #e9ebec;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.385);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.facilitator-card img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.385);
+}
+
+.facilitator-card p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.facilitator-card .name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.facilitator-card .affiliation {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.facilitator-card .email {
+    font-size: 0.85rem;
+    color: #1e6bb8;
+}
+*/
+
+/* ======== FACILITATOR CARDS ======== */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6-column grid for flexibility */
+    gap: 25px;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+/* First row: 2 cards, each spanning 3 columns */
+.facilitator-card:nth-child(1),
+.facilitator-card:nth-child(2) {
+    grid-column: span 3;
+}
+
+/* Second row: 3 cards, each spanning 2 columns */
+.facilitator-card:nth-child(3),
+.facilitator-card:nth-child(4),
+.facilitator-card:nth-child(5) {
+    grid-column: span 2;
+}
+
+.facilitator-card {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: none; /* Remove max-width restriction */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.facilitator-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Default styling for all images */
+.facilitator-card img {
+    width: 100%;
+    height: 200px; /* Default height for second row */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 2px solid #f0f0f0;
+}
+
+/* Special styling only for first row images (cards 1 and 2) */
+.facilitator-card:nth-child(1) img,
+.facilitator-card:nth-child(2) img {
+    height: 270px; /* Larger height for first row */
+    object-position: center top; /* Better positioning for first row portraits */
+}
+
+.facilitator-card .name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1b4d89; /* Conference blue tone */
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.facilitator-card .affiliation {
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    min-height: 40px; /* Ensures consistent spacing even with different text lengths */
+}
+
+.facilitator-card .email {
+    font-size: 0.85rem;
+    color: #666666; /* gray-ish color */
+    font-weight: bold;
+    word-break: break-word;
+    text-decoration: none; /* no underline */
+    transition: none; /* remove color transition */
+}
+
+.facilitator-card .email:hover {
+    text-decoration: none; /* no underline on hover */
+    color: #666666; /* keep same gray on hover */
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .facilitator-card:nth-child(1),
+    .facilitator-card:nth-child(2),
+    .facilitator-card:nth-child(3),
+    .facilitator-card:nth-child(4),
+    .facilitator-card:nth-child(5) {
+        grid-column: span 1;
+    }
+    
+    .facilitator-card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* ======== ORGANIZERS GRID ======== */
+.organizer-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.organizer-card {
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.organizer-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.organizer-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.organizer-card .name {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #1b4d89;
+    margin-bottom: 4px;
+}
+
+.organizer-card .position {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.organizer-card .affiliation {
+    font-size: 0.78rem;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.organizer-card .email {
+    font-size: 0.75rem;
+    color: #666666; /* gray-ish */
+    font-weight: bold;
+    word-break: break-word;
+    text-decoration: none; /* no underline */
+    transition: none; /* no hover color transition */
+}
+
+.organizer-card .email:hover {
+    text-decoration: none; /* no underline on hover */
+    color: #666666; /* keep same gray color on hover */
+}
+
+
+/* First row: bigger cards */
+.organizer-row:not(.small-row) .organizer-card {
+    width: 250px;
+}
+
+/* Second row: slightly smaller to fit 4 */
+.small-row .organizer-card {
+    width: 200px;
+}
+
+/* Responsive: stack on small screens */
+@media screen and (max-width: 768px) {
+    .organizer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Updated tagline section with logos */
+.project-tagline-section {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-tagline {
+    font-weight: normal;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Header logo styling - single Moratuwa logo */
+.header-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.moratuwa-logo {
+    height: 80px;
+    width: auto;
+    opacity: 0.95;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.moratuwa-logo:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for header logo */
+@media screen and (max-width: 768px) {
+    .moratuwa-logo {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .moratuwa-logo {
+        height: 50px;
+    }
+}
+
+.break-row {
+    background-color: #fff3cd;
+    font-style: italic;
+}
+
+/* Add these mobile-specific overrides to your existing style.css */
+/* Keep all existing desktop styles unchanged - these are additional mobile improvements */
+
+/* ======== MOBILE-SPECIFIC IMPROVEMENTS ======== */
+
+/* Enhanced mobile responsiveness for header */
+@media screen and (max-width: 480px) {
+    .page-header {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .project-name {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+    
+    .project-tagline {
+        font-size: 1.1rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+    
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        margin: 0.3rem;
+    }
+}
+
+/* Enhanced mobile responsiveness for main content */
+@media screen and (max-width: 480px) {
+    .main-content {
+        padding: 1rem 0.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .main-content h2 {
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .main-content h3 {
+        font-size: 1.1rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .main-content p {
+        margin-bottom: 0.8rem;
+        line-height: 1.4;
+    }
+}
+
+/* Better mobile table handling */
+@media screen and (max-width: 768px) {
+    .main-content table {
+        font-size: 0.7rem;
+        margin: 1rem 0;
+    }
+    
+    .main-content table th,
+    .main-content table td {
+        padding: 0.3rem 0.5rem;
+        white-space: normal;
+        word-break: break-word;
+    }
+    
+    /* Make time columns narrower on mobile */
+    .main-content table th:nth-child(1),
+    .main-content table td:nth-child(1),
+    .main-content table th:nth-child(2),
+    .main-content table td:nth-child(2) {
+        min-width: 80px;
+        font-size: 0.65rem;
+    }
+    
+    /* Make presenter column wrap better */
+    .main-content table th:nth-child(5),
+    .main-content table td:nth-child(5) {
+        min-width: 120px;
+        font-size: 0.7rem;
+    }
+}
+
+/* Ultra-small mobile table */
+@media screen and (max-width: 480px) {
+    .main-content table {
+        font-size: 0.6rem;
+    }
+    
+    .main-content table th,
+    .main-content table td {
+        padding: 0.2rem 0.3rem;
+    }
+    
+    .main-content table th:nth-child(1),
+    .main-content table td:nth-child(1),
+    .main-content table th:nth-child(2),
+    .main-content table td:nth-child(2) {
+        min-width: 70px;
+        font-size: 0.55rem;
+    }
+}
+
+/* Enhanced facilitator cards mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 10px;
+        max-width: 100%;
+    }
+    
+    .facilitator-card {
+        padding: 15px;
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    .facilitator-card img {
+        height: 180px;
+        margin-bottom: 10px;
+    }
+    
+    .facilitator-card .name {
+        font-size: 1rem;
+    }
+    
+    .facilitator-card .affiliation {
+        font-size: 0.85rem;
+        min-height: auto;
+        margin-bottom: 6px;
+    }
+    
+    .facilitator-card .email {
+        font-size: 0.8rem;
+    }
+}
+
+/* Ultra-small mobile facilitator cards */
+@media screen and (max-width: 480px) {
+    .photo-grid {
+        gap: 10px;
+        padding: 0 5px;
+    }
+    
+    .facilitator-card {
+        padding: 12px;
+    }
+    
+    .facilitator-card img {
+        height: 160px;
+    }
+    
+    .facilitator-card .name {
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+    }
+    
+    .facilitator-card .affiliation {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    
+    .facilitator-card .email {
+        font-size: 0.75rem;
+    }
+}
+
+/* Enhanced organizer cards mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .organizer-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .organizer-card {
+        width: 280px;
+        max-width: 90vw;
+    }
+    
+    .organizer-card img {
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .organizer-row {
+        gap: 12px;
+    }
+    
+    .organizer-card {
+        width: 260px;
+        max-width: 95vw;
+        padding: 10px;
+    }
+    
+    .organizer-card img {
+        height: 130px;
+    }
+    
+    .organizer-card .name {
+        font-size: 0.95rem;
+    }
+    
+    .organizer-card .affiliation {
+        font-size: 0.75rem;
+    }
+    
+    .organizer-card .email {
+        font-size: 0.7rem;
+    }
+}
+
+/* Enhanced logos mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .logos-container {
+        gap: 20px;
+        margin-top: 1rem;
+        padding: 0 10px;
+    }
+    
+    .logos {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo-size-1 { max-width: 90px; }
+    .logo-size-2 { max-width: 130px; }
+    .logo-size-3 { max-width: 180px; }
+    .logo-size-4 { max-width: 150px; }
+    .logo-size-5 { max-width: 120px; }
+    .logo-size-6 { max-width: 120px; }
+}
+
+@media screen and (max-width: 480px) {
+    .logos-container {
+        gap: 15px;
+        padding: 0 5px;
+    }
+    
+    .logos {
+        gap: 12px;
+    }
+    
+    .logo-size-1 { max-width: 80px; }
+    .logo-size-2 { max-width: 110px; }
+    .logo-size-3 { max-width: 160px; }
+    .logo-size-4 { max-width: 130px; }
+    .logo-size-5 { max-width: 100px; }
+    .logo-size-6 { max-width: 100px; }
+}
+
+/* Enhanced mobile image responsiveness */
+@media screen and (max-width: 768px) {
+    .center-image {
+        max-width: 90%;
+        margin: 0 auto 0.8rem auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .center-image {
+        max-width: 95%;
+        margin: 0 auto 0.6rem auto;
+    }
+}
+
+/* Mobile-friendly abstract section */
+@media screen and (max-width: 480px) {
+    .abstract-section p {
+        text-align: justify;
+        line-height: 1.4;
+    }
+    
+    .abstract-section h3 {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Enhanced header logo mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .project-tagline-section {
+        gap: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .header-logos {
+        margin-top: 0.3rem;
+    }
+    
+    .moratuwa-logo {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-tagline-section {
+        gap: 0.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .moratuwa-logo {
+        height: 50px;
+    }
+}
+
+/* Enhanced site info mobile responsiveness */
+@media screen and (max-width: 480px) {
+    .site-info {
+        font-size: 0.8rem;
+        line-height: 1.3;
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .site-info p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Mobile-friendly break row styling */
+@media screen and (max-width: 768px) {
+    .break-row td {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.3rem;
+    }
+}
+
+/* Ensure no horizontal scroll on mobile */
+@media screen and (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .main-content {
+        overflow-x: hidden;
+        word-wrap: break-word;
+    }
+    
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
