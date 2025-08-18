@@ -168,7 +168,7 @@ body {
   box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
 
-/* Extra Mobile-Friendly Tweaks */
+/* Extra Mobile-Friendly Tweaks 
 @media (max-width: 600px) {
   .content {
     padding: 60px 15px;
@@ -198,5 +198,19 @@ body {
   }
   .logo-img {
     max-height: 45px;
+  }
+}
+*/
+/* Mobile Logo Row: 2 rows */
+@media (max-width: 600px) {
+  .logo-row {
+    flex-wrap: wrap;           /* allow wrapping */
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .logo-img {
+    flex: 1 1 45%;             /* each logo takes ~45% width */
+    max-height: 50px;
   }
 }
