@@ -149,63 +149,179 @@ a:hover { text-decoration: underline; }
   }
 }
 
-
-/* ========== FACILITATORS GRID ==========
-   EDIT HERE: change card spacing, image height, columns
-========================================= */
+/* ========== FACILITATORS GRID (Updated to match organizers) ========== */
 .photo-grid {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
-.row {
-  display: flex;
-  justify-content: center; /* centers the cards in the row */
-  gap: 20px;               /* space between cards */
-  flex-wrap: wrap;          /* allows wrapping on small screens */
+/* First row - 2 facilitators centered */
+.row:nth-child(1) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-content: center;
+  max-width: 650px; /* Slightly bigger */
+  margin: 0 auto;
+}
+
+/* Second row - 3 facilitators */
+.row:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-content: center;
+  max-width: 950px; /* Slightly bigger */
+  margin: 0 auto;
 }
 
 .facilitator-card {
   text-align: center;
-  max-width: 200px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px; /* Increased from 15px */
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.facilitator-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+/* Default image styling for all facilitator cards */
 .facilitator-card img {
   width: 100%;
-  border-radius: 10px;
-}
-
-
-
-.facilitator-card {
-  text-align: center; background: #fff; padding: 15px; border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.facilitator-card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
-
-/* Default image size for all facilitator cards */
-.facilitator-card img {
-  width: 120px; height: 150px; object-fit: cover; object-position: center;
-  border-radius: 6px; margin-bottom: 10px; border: 2px solid #f0f0f0;
-  margin-left: auto; margin-right: auto; display: block;
+  height: 180px; /* Increased from 160px */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  margin-bottom: 12px; /* Increased from 10px */
 }
 
 /* Individual image size controls - EDIT THESE to adjust each image */
-.facilitator-card:nth-child(1) img { width: 150px; height: 130px; }
-.facilitator-card:nth-child(2) img { width: 100px; height: 130px; }
-.facilitator-card:nth-child(3) img { width: 110px; height: 140px; }
-.facilitator-card:nth-child(4) img { width: 110px; height: 140px; }
-.facilitator-card:nth-child(5) img { width: 110px; height: 140px; }
+/* First row - 2 facilitators */
+.row:nth-child(1) .facilitator-card:nth-child(1) img { width: 160px; height: 175px; } /* Dr. Dinuka */
+.row:nth-child(1) .facilitator-card:nth-child(2) img { width: 140px; height: 190px; } /* Dr. Nushara */
 
-.facilitator-card .name { font-size: 1.1rem; font-weight: 700; color: #058363; margin-bottom: 6px; }
-.facilitator-card .affiliation { font-size: 0.9rem; color: #555; font-style: italic; margin-bottom: 8px; line-height: 1.4; min-height: 40px; }
-.facilitator-card .email a { color: #09792a; font-weight: 700; text-decoration: none; }
+/* Second row - 3 facilitators */
+.row:nth-child(2) .facilitator-card:nth-child(1) img { width: 200px; height: 190px; } /* Ms. Madusha */
+.row:nth-child(2) .facilitator-card:nth-child(2) img { width: 150px; height: 180px; } /* Mr. Asiri */
+.row:nth-child(2) .facilitator-card:nth-child(3) img { width: 150px; height: 160px; } /* Mr. Sanka */
 
+.facilitator-card .name {
+  font-weight: 700;
+  color: #00856f;
+  margin-bottom: 6px; /* Increased from 5px */
+  font-size: 1.1rem; /* Increased from 1.05rem */
+}
+
+.facilitator-card .affiliation {
+  font-size: 0.95rem; /* Increased from 0.9rem */
+  color: #555;
+  margin-bottom: 6px; /* Increased from 5px */
+}
+
+.facilitator-card .email a {
+  color: #666;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.95rem; /* Increased from 0.9rem */
+}
+
+/* Mobile responsiveness for facilitators */
+@media (max-width: 768px) {
+  .row:nth-child(1),
+  .row:nth-child(2) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 480px) {
+  .row:nth-child(1),
+  .row:nth-child(2) {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+}
+/* ========== ORGANIZERS GRID ========== */
+.organizer-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 organizers per row */
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.organizer-card {
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.organizer-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Default image styling for all organizer cards */
+.organizer-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+/* Individual image size controls - EDIT THESE to adjust each image */
+/* Just change the width and height values for each organizer */
+.organizer-card:nth-child(1) img { width: 110px; height: 150px; }
+.organizer-card:nth-child(2) img { width: 110px; height: 140px; }
+.organizer-card:nth-child(3) img { width: 115px; height: 145px; }
+.organizer-card:nth-child(4) img { width: 100px; height: 155px; }
+.organizer-card:nth-child(5) img { width: 110px; height: 140px; }
+.organizer-card:nth-child(6) img { width: 130px; height: 150px; }
+.organizer-card:nth-child(7) img { width: 130px; height: 135px; }
+.organizer-card:nth-child(8) img { width: 90px; height: 130px; }
+
+.organizer-card .name {
+  font-weight: 700;
+  color: #00856f;
+  margin-bottom: 4px;
+}
+
+.organizer-card .affiliation {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.organizer-card .email a {
+  color: #666;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Mobile responsiveness for organizers */
+@media (max-width: 768px) {
+  .organizer-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .organizer-row {
+    grid-template-columns: 1fr;
+  }
+}
 /* ========== ORGANIZERS GRID ========== */
 .organizer-row {
   display: grid;
