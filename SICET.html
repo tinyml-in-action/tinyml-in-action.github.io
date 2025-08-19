@@ -42,68 +42,154 @@
     <!-- FACILITATORS -->
     <h2>Facilitators Team</h2>
     <div class="photo-grid">
-      <div class="facilitator-card">
-        <img src="assets/Dr. Dinuka.jpg" alt="Dr. Samitha Somathilaka" />
-        <p class="name">Dr. Dinuka Sahabandu</p>
-        <p class="affiliation">Dr. Dinuka Sahabandu</p>
-        <p class="affiliation">University of Washington (UoW)</p>
-        <p class="email"><a href="mailto:ssomathilaka2@unl.edu">sdinuka@uw.edu</a></p>
-      </div>
-
-      <div class="facilitator-card">
-        <img src="assets/Picture1.jpg" alt="Dr. Nushara Wedasingha" />
-        <p class="name">Dr. Nushara Wedasingha</p>
-        <p class="affiliation">Dr. Nushara Wedasingha</p>
-        <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p>
-        <p class="email"><a href="mailto:sdinuka@uw.edu">nushara.w@sliit.lk</a></p>
-      </div>
-
-      <div class="facilitator-card">
-        <img src="assets/Picture2.jpg" alt="Mr. Asiri Gawesha" />
-        <p class="name">Ms. Madusha Weerasooriya</p>
-        <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p>
-        <p class="email"><a href="mailto:asiri.g@sliit.lk">madusha.w@sliit.lk</a></p>
-      </div>
-
-      <div class="facilitator-card">
-        <img src="assets/MrA.jpg" alt="Mr. Sanka Mohottala" />
-        <p class="name">Mr. Asiri Gawesha</p>
-        <p class="affiliation">Open University of Sri Lanka</p>
-        <p class="email"><a href="mailto:sanka.mo@sliit.lk">aglin@ou.ac.lk</a></p>
-      </div>
-
-      <div class="facilitator-card">
-        <img src="assets/MrS.jpg" alt=" Mr. Asiri Gawesha" />
-        <p class="name"> Mr. Sanka Mohottala</p>
-        <p class="affiliation">Sri Lanka Institute of Information Technology (SLIIT)</p>
-        <p class="email"><a href="mailto:mahima.w@sliit.lk">sanka.mo@sliit.lk</a></p>
-      </div>
+  <div class="row">
+    <div class="facilitator-card">
+      <img src="assets/Dr. Dinuka.jpg" alt="Dr. Dinuka Sahabandu" />
+      <p class="name">Dr. Dinuka Sahabandu</p>
+      <p class="affiliation">University of Washington (UoW)</p>
+      <p class="email"><a href="mailto:sdinuka@uw.edu">sdinuka@uw.edu</a></p>
     </div>
 
-    <!-- MOTIVATION / ABSTRACT 
-     All accepted papers under ACM ICPS will be published as open access, as per ACM’s new publishing policy. 
-     Authors not affiliated with ACM Open institutions or waiver countries may be subject to an Article Processing Charge (APC).-->
-    <h2>Motivation Behind The Workshop</h2>
+    <div class="facilitator-card">
+      <img src="assets/Picture1.jpg" alt="Dr. Nushara Wedasingha" />
+      <p class="name">Dr. Nushara Wedasingha</p>
+      <p class="affiliation">SLIIT</p>
+      <p class="email"><a href="mailto:nushara.w@sliit.lk">nushara.w@sliit.lk</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="facilitator-card">
+      <img src="assets/Picture2.jpg" alt="Ms. Madusha Weerasooriya" />
+      <p class="name">Ms. Madusha Weerasooriya</p>
+      <p class="affiliation">SLIIT</p>
+      <p class="email"><a href="mailto:madusha.w@sliit.lk">madusha.w@sliit.lk</a></p>
+    </div>
+
+    <div class="facilitator-card">
+      <img src="assets/MrA.jpg" alt="Mr. Asiri Gawesha" />
+      <p class="name">Mr. Asiri Gawesha</p>
+      <p class="affiliation">Open University of Sri Lanka</p>
+      <p class="email"><a href="mailto:aglin@ou.ac.lk">aglin@ou.ac.lk</a></p>
+    </div>
+
+    <div class="facilitator-card">
+      <img src="assets/MrS.jpg" alt="Mr. Sanka Mohottala" />
+      <p class="name">Mr. Sanka Mohottala</p>
+      <p class="affiliation">SLIIT</p>
+      <p class="email"><a href="mailto:sanka.mo@sliit.lk">sanka.mo@sliit.lk</a></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- MOTIVATION / ABSTRACT -->
+    <h2>Workshop Scope</h2>
     <div class="abstract-section">
-      <p>As deep learning models become increasingly complex, deploying them on resource-constrained devices poses significant challenges. Tiny Machine Learning (TinyML) enables ultra-compact, low-power AI models suitable for embedded systems and real-time sensor analytics.</p>
-      <p>This workshop covers pruning, quantization-aware training, post-training quantization, knowledge distillation, and efficient network design strategies, with practical deployment on embedded/mobile platforms.</p>
+      <p>
+      This workshop introduces <strong>TinyML</strong> as the ultimate destination of efficient machine learning,
+      covering efficiency in parameters, data, computation, and energy. It begins with an introduction to TinyML and
+      its differences from Edge AI and Cloud AI. The scope is divided into four areas:
+    </p>
+    <ol>
+      <li>
+        <strong>Compression methods</strong> – pruning, quantization, and distillation to make large models tiny.
+      </li>
+      <li>
+        <strong>Parameter-efficient architectures</strong> – approaches for building efficient models.
+      </li>
+      <li>
+        <strong>General resource efficiency</strong> – data, energy, and connectivity (sparsity) considerations.
+      </li>
+      <li>
+        <strong>Deployment of TinyML</strong> – on devices like Arduino, STM32, Raspberry Pi, and mobile using TensorFlow Lite.
+      </li>
+    </ol>
+    <p>
+      Hands-on sessions in all areas will help participants balance accuracy, latency, and memory for real-world
+      deployment in constrained environments.
+    </p>
 
-      <h3>1. Academic Research Gap in Sri Lanka</h3>
+     <h2>Timeliness of the Workshop</h2>
+      <h3>1. Lack of TinyML related publications in local conferences</h3>
+
+      <!--
       <p>We compared metadata from five Sri Lankan IEEE conferences (ICAC, ICARC, ICIIS, MERCon, SCSE) and four international IEEE venues (AICAS, EDGE, ISCAS, PERCOM) to show the gap. Code/data: <a href="https://github.com/sankamohotttala/MERCon_2025_Workshop">GitHub</a>.</p>
+      -->
+      
+       <p class="meta">
+      Despite the growing research happening in TinyML, Model Optimization and related areas, the authors of this workshop proposal, who have served as conference organizers, track chairs, and reviewers, observed a noticeable lack of related papers at local (Sri Lankan) conferences.
+    </p>
 
-      <!-- EDIT HERE: replace the figure image -->
-      <img src="assets/grapg sciet.png" alt="Distribution of research papers in local conferences since 2020" class="center-image" />
-    <!-- Figure caption 
-    <p class="figure-caption">Figure 1</p>-->
+    <h3>Methodology</h3>
+    <p>
+      To validate this observation, we analyzed the metadata (keywords, abstracts, titles, etc.) of proceedings from five major local conferences published in IEEE Xplore. We focused on papers published after 2020, with the exception of ICIIS, for which 2019 was also included. The conferences analyzed were:
+    </p>
+    <ul>
+      <li><em>International Conference on Advancements in Computing (ICAC)</em></li>
+      <li><em>International Conference on Advanced Research in Computing (ICARC)</em></li>
+      <li><em>International Conference on Industrial and Information Systems (ICIIS)</em></li>
+      <li><em>Moratuwa Engineering Research Conference (MERCon)</em></li>
+      <li><em>International Research Conference on Smart Computing and Systems Engineering (SCSE)</em></li>
+    </ul>
 
+    <h3>Findings</h3>
+
+<!-- Highlighted big card -->
+<div class="highlight-card">
+  <strong>Total papers examined:</strong> 1,942
+</div>
+
+<!-- Smaller cards grid -->
+<div class="findings-grid">
+  <div class="mini-card"><strong>Machine learning related:</strong> 801</div>
+  <div class="mini-card"><strong>Neural networks:</strong> 466</div>
+  <div class="mini-card"><strong>Embedded systems:</strong> 78</div>
+  <div class="mini-card"><strong>Computational efficiency:</strong> 115</div>
+  <div class="mini-card"><strong>Data-efficiency:</strong> 62</div>
+  <div class="mini-card"><strong>Energy efficiency:</strong> 5</div>
+  <div class="mini-card"><strong>Parameter efficiency:</strong> 21</div>
+  <div class="mini-card"><strong>TinyML:</strong> 32</div>
+  <div class="mini-card"><strong>Total unique papers in TinyML-focused areas:</strong> 235</div>
+</div>
+
+
+
+    <figure>
+      <img src="assets/grapg sciet.png" alt="Figure 1: Visualization of paper counts across categories (placeholder image)" width="100%" />
+      <figcaption style="text-align: center;"></figcaption>
+        Figure 1. The findings are illustrated here. For transparency, the exact keywords, datasets, detailed results, and the developed codes are openly available online.
+      </figcaption>
+    </figure>
+
+    <p>
+      Given that most papers published at local conferences are from undergraduate students, this shows a lack of exposure to TinyML and related research domains. Given that capstone projects (final year research) generally reside in application domains, TinyML can add novelty potentially making them experimental research work. Thus TinyML is an ideal research direction for undergraduate students and we hope to give the necessary exposure to them through this workshop so that they can do research work in this domain.
+    </p>
+
+      <h3>2. Large size of Foundational Models</h3>
+      <p>
+    Second, the global AI landscape is shifting with the rise of large foundational models
+    (<em>ex: LLM, LLVM etc.</em>) at fast pace. Resultant models are large in size and the required data
+    (Kaplan et al., 2020) and it seems this is not going to change in the near future. Thus, there is a
+    requirement to make these models smaller and efficient. TinyML and the related techniques in these
+    research areas can help achieve this.
+  </p>
+      <h3>3. Sensor data analysis in engineering domains</h3>
+       <p>
+    The explosion of sensor-rich environments and IoT systems presents a growing demand for AI solutions that are private,
+    responsive, and energy-efficient—capabilities that TinyML directly supports. This is specially needed for Industry 4.0,
+    5G and beyond where massive machine type communication (mMTC) is an important pillar. Engineering domains
+    can all take advantage from TinyML and related work to improve their fields
+  </p>
+      <h3>4. Brain-Inspired Architectures</h3>
+       <p>
+    While all previous rationales are application focused, there is also a scientific rationale for TinyML which is that all
+    these road (i.e., different efficiencies such as data-efficiency) while they lead to TinyML they also lead to brain-like
+    architectures (<em>Somathilaka et al., 2024</em>) since all those efficiencies have similarity to brain functionalities.
+  </p>
       <h3>2. Democratization of AI</h3>
-      <p>TinyML lowers the cost and hardware needs for inference, enabling AI at the edge with privacy and low latency.</p>
+     <p>AI technologies such as DeepMind’s AlphaFold, Tesla’s end-to-end autonomous driving stack, and OpenAI’s GPT models have shown how machine learning can revolutionize scientific and engineering processes. However, these breakthroughs are often locked behind massive computational infrastructures accessible only to large corporations. TinyML, with its focus on computation, parameter, and energy efficiency, presents a unique opportunity to democratize AI. By dramatically reducing the cost and hardware requirements for inference, TinyML allows researchers, students, and engineers especially in the global south to integrate AI into real-world engineering workflows. The efficiency paradigm championed by TinyML shifts the focus from centralized, high-cost models to decentralized, low-power systems that enable AI at the edge.</p>
 
-      <h3>3. Relevance to Core Engineering Domains</h3>
-      <p><strong>Civil:</strong> On-device SHM; <strong>Biomedical:</strong> Wearable diagnostics locally; <strong>Electrical/Computer:</strong> Smart meters, grid monitoring; <strong>Mechanical:</strong> Predictive maintenance at the edge.</p>
-
-      <h3>4. Consumer Product Engineering</h3>
-      <p>Always-on sensing (e.g., wake-word detection) and offline operation benefit from TinyML’s power efficiency and privacy.</p>
     </div>
 <h2>Workshop Agenda</h2>
     <!-- AGENDA -->
@@ -131,6 +217,80 @@
       </tbody>
     </table>
     -->
+
+    <section id="workshop-agenda" aria-labelledby="agenda-title">
+  <div class="agenda-container">
+    <table class="agenda-table">
+      <thead>
+        <tr>
+          <th>Start Time</th>
+          <th>End Time</th>
+          <th>Duration</th>
+          <th>Topic</th>
+          <th>Presenter</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1:00 PM</td>
+          <td>1:05 PM</td>
+          <td>5 mins</td>
+          <td>Intro to panel</td>
+          <td>Dr Dharshana</td>
+        </tr>
+        <tr>
+          <td>1:05 PM</td>
+          <td>1:15 PM</td>
+          <td>10 mins</td>
+          <td>Introduction to the session</td>
+          <td>Asiri</td>
+        </tr>
+        <tr>
+          <td>1:15 PM</td>
+          <td>2:00 PM</td>
+          <td>45 mins</td>
+          <td>Wet TinyML</td>
+          <td>Dr. Samitha</td>
+        </tr>
+        <tr>
+          <td>2:00 PM</td>
+          <td>3:30 PM</td>
+          <td>90 mins</td>
+          <td>Model compression techniques</td>
+          <td>Dr. Dinuka</td>
+        </tr>
+        <tr>
+          <td>3:30 PM</td>
+          <td>3:40 PM</td>
+          <td>10 mins</td>
+          <td>Interval</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>3:40 PM</td>
+          <td>4:40 PM</td>
+          <td>60 mins</td>
+          <td>Coding Session on Model Compression Techniques</td>
+          <td>Asiri</td>
+        </tr>
+        <tr>
+          <td>4:40 PM</td>
+          <td>5:10 PM</td>
+          <td>30 mins</td>
+          <td>Efficiency through architectural improvements</td>
+          <td>Sanka</td>
+        </tr>
+        <tr>
+          <td>5:10 PM</td>
+          <td>5:30 PM</td>
+          <td>20 mins</td>
+          <td>Energy Efficient Architectures</td>
+          <td>Dr. Mahima</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
     <!-- ORGANIZERS -->
 <h2>Organizers</h2>
@@ -217,7 +377,7 @@
     Organized by BrAINLabs Research Group,SLIIT
 </p>
 <p style="margin: 0 0 1.5rem 0; color: #4a5568; font-size: 1.1rem; font-family: 'Times New Roman', Times, serif; text-align: center;">
-    and Faculty of Engineering, SLIIT
+    and Faculty of Engineering, SLIIT
 </p>
       
     

@@ -90,55 +90,117 @@ a:hover { text-decoration: underline; }
   background: #f3f6fa; border-radius: 0.3rem; padding: 2px 4px;
 }
 
-/* ========== AGENDA TABLE ========== */
-.main-content table {
-  display: table; margin: 0 auto;
-  border-collapse: collapse; table-layout: auto; font-size: 0.9rem;
+.agenda-container {
+  overflow-x: auto; /* horizontal scroll on small screens */
+  margin-top: 1rem;
 }
-.main-content table th, .main-content table td {
-  padding: 0.5rem 1rem; border: 1px solid #e9ebec; white-space: nowrap; text-align: center;
-}
-.main-content table th:nth-child(1),
-.main-content table td:nth-child(1),
-.main-content table th:nth-child(2),
-.main-content table td:nth-child(2) { min-width: 130px; }
-.main-content table th:nth-child(5),
-.main-content table td:nth-child(5) { min-width: 160px; }
 
-.break-row { background-color: #fff3cd; font-style: italic; }
+.agenda-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.agenda-table th,
+.agenda-table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.agenda-table th {
+  background-color: #f0fdf4; /* very light green */
+  font-weight: 600;
+}
+
+.agenda-table tr:nth-child(even) td {
+  background-color: #f9fafb; /* alternate row color */
+}
+
+/* Mobile-friendly stacking (for very narrow screens) */
+@media (max-width: 600px) {
+  .agenda-table, .agenda-table thead, .agenda-table tbody, .agenda-table th, .agenda-table td, .agenda-table tr {
+    display: block;
+  }
+  .agenda-table thead {
+    display: none; /* hide header */
+  }
+  .agenda-table tr {
+    margin-bottom: 1rem;
+    border: 1px solid #d1fae5;
+    border-radius: 12px;
+    padding: 0.5rem;
+    background: #f0fdf4;
+  }
+  .agenda-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .agenda-table td:last-child {
+    border-bottom: none;
+  }
+  .agenda-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    flex-basis: 50%;
+  }
+}
+
 
 /* ========== FACILITATORS GRID ==========
    EDIT HERE: change card spacing, image height, columns
 ========================================= */
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 25px;
-  margin-bottom: 2rem;
-  max-width: 1200px; margin-inline: auto; padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-/* First row (2 bigger cards) */
-.facilitator-card:nth-child(1),
-.facilitator-card:nth-child(2) { grid-column: span 3; }
-/* Second row (3 smaller cards) */
-.facilitator-card:nth-child(3),
-.facilitator-card:nth-child(4),
-.facilitator-card:nth-child(5) { grid-column: span 2; }
+
+.row {
+  display: flex;
+  justify-content: center; /* centers the cards in the row */
+  gap: 20px;               /* space between cards */
+  flex-wrap: wrap;          /* allows wrapping on small screens */
+}
 
 .facilitator-card {
-  text-align: center; background: #fff; padding: 20px; border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  max-width: 200px;
 }
-.facilitator-card:hover { transform: translateY(-5px); box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
 
 .facilitator-card img {
-  width: 100%; height: 200px; object-fit: cover; object-position: center;
-  border-radius: 8px; margin-bottom: 12px; border: 2px solid #f0f0f0;
+  width: 100%;
+  border-radius: 10px;
 }
-/* Taller image for first row */
-.facilitator-card:nth-child(1) img,
-.facilitator-card:nth-child(2) img { height: 250px; width: 150px; object-position: center top; }
+
+
+
+.facilitator-card {
+  text-align: center; background: #fff; padding: 15px; border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.facilitator-card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+
+/* Default image size for all facilitator cards */
+.facilitator-card img {
+  width: 120px; height: 150px; object-fit: cover; object-position: center;
+  border-radius: 6px; margin-bottom: 10px; border: 2px solid #f0f0f0;
+  margin-left: auto; margin-right: auto; display: block;
+}
+
+/* Individual image size controls - EDIT THESE to adjust each image */
+.facilitator-card:nth-child(1) img { width: 150px; height: 130px; }
+.facilitator-card:nth-child(2) img { width: 100px; height: 130px; }
+.facilitator-card:nth-child(3) img { width: 110px; height: 140px; }
+.facilitator-card:nth-child(4) img { width: 110px; height: 140px; }
+.facilitator-card:nth-child(5) img { width: 110px; height: 140px; }
 
 .facilitator-card .name { font-size: 1.1rem; font-weight: 700; color: #058363; margin-bottom: 6px; }
 .facilitator-card .affiliation { font-size: 0.9rem; color: #555; font-style: italic; margin-bottom: 8px; line-height: 1.4; min-height: 40px; }
@@ -268,4 +330,80 @@ a:hover { text-decoration: underline; }
     line-height: 1.4;
     font-size: 0.875rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+
+
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+
+/* Text blocks */
+p {
+  margin: 0 0 1rem;
+}
+
+.meta {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+ul {
+  margin: .25rem 0 1rem 1.25rem;
+}
+
+/* Highlighted big card */
+.highlight-card {
+  
+  border-radius: 14px;
+  padding: 1rem;
+  background: #d1fae5; /* light green highlight */
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Smaller cards grid */
+.findings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+}
+
+.mini-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: #ffffff;
+  font-size: 0.95rem;
+  color: #374151; /* neutral gray */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mini-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+
+/* Figures */
+figure {
+  margin: 1.25rem 0;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #f9fafb;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin-top: .5rem;
 }
