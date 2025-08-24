@@ -6,7 +6,6 @@
 
 body {
   font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-
   background: #ffffff;
   color: #111827;
   overflow-x: hidden;
@@ -27,14 +26,14 @@ body {
 .content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
 .page-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   background: linear-gradient(135deg, #1b3264, #06b6d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -43,123 +42,22 @@ body {
 /* Workshops Grid */
 .workshops-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 0 10px;
 }
 
 .workshop-card {
   background: #ffffffcc;
   border: 1px solid #e5e7eb;
   border-radius: 16px;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
   backdrop-filter: blur(8px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
-}
-
-.workshop-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-}
-/* Logo Container */
-.workshop-logo-placeholder {
-  width: 160px;
-  height: 60px;
-  margin: 0 auto 1.5rem auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  /* Remove background & border since it's not a placeholder anymore */
-  background: none;
-  border: none;
-}
-
-/* Logo Image */
-.workshop-logo {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* makes sure the logo scales without distortion */
-  display: block;
-}
-
-
-.workshop-subtitle {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #1e293b;
-}
-
-.workshop-text {
-  color: #475569;
-  line-height: 1.7;
-  font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .workshops-grid {
-    grid-template-columns: 1fr;
-  }
-  .page-title {
-    font-size: 2.2rem;
-  }
-}
-
-/* Logo Row Styling */
-.logo-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* space between logos */
-  padding: 20px;
-  background-color: white; /* keep it clean */
-  position: relative;
-  z-index: 2; /* ensure logos stay above canvas */
-}
-
-/* General logo styling */
-.logo-img {
-  height: auto;
-  max-height: 60px; /* default size */
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.logo-img:hover {
-  transform: scale(1.05);
-}
-
-/* Individual logo size overrides (adjust as needed) */
-.logo1 { max-height: 80px; }
-.logo2 { max-height: 50px; }
-.logo3 { max-height: 40px; }
-.logo4 { max-height: 35px; }
-.logo5 { max-height: 95px; }
-.logo6 { max-height: 75px; }
-.logo7 { max-height: 80px; }
-
-
-.workshop-logo {
-  max-width: 200px;   /* scale logo */
-  height: auto;       /* keep proportions */
-  display: block;
-  margin: 0 auto;     /* center horizontally */
-}
-.workshop-card {
-  display: block;               /* make anchor behave like a card */
-  background: #ffffffcc;
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
-  padding: 2rem;
-  text-align: center;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
-  text-decoration: none;        /* remove underline */
-  color: inherit;               /* keep text colors */
+  text-decoration: none;
+  color: inherit;
   cursor: pointer;
 }
 
@@ -168,14 +66,82 @@ body {
   box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
 
-/* Extra Mobile-Friendly Tweaks 
-@media (max-width: 600px) {
+/* Logo Container */
+.workshop-logo-placeholder {
+  width: 160px;
+  height: 60px;
+  margin: 0 auto 1.2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: none;
+  border: none;
+}
+
+/* Logo Image */
+.workshop-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Workshop Text */
+.workshop-subtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #1e293b;
+}
+
+.workshop-text {
+  color: #475569;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* Logo Row Styling */
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+
+/* General logo styling */
+.logo-img {
+  height: auto;
+  max-height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+/* Individual logo size overrides */
+.logo1 { max-height: 70px; }
+.logo2 { max-height: 45px; }
+.logo3 { max-height: 35px; }
+.logo4 { max-height: 30px; }
+.logo5 { max-height: 85px; }
+.logo6 { max-height: 65px; }
+.logo7 { max-height: 70px; }
+
+/* Responsive Design */
+@media (max-width: 900px) {
   .content {
     padding: 60px 15px;
   }
   .page-title {
-    font-size: 1.8rem;
-    line-height: 1.3;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
   .workshops-grid {
@@ -189,28 +155,76 @@ body {
     font-size: 1.2rem;
   }
   .workshop-text {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 40px 10px;
+  }
+  .page-title {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  .workshops-grid {
+    gap: 1rem;
+  }
+  .workshop-card {
+    padding: 1rem;
+  }
+  .workshop-logo-placeholder {
+    width: 120px;
+    height: 50px;
+  }
+  .workshop-subtitle {
+    font-size: 1.1rem;
+  }
+  .workshop-text {
+    font-size: 0.8rem;
     line-height: 1.5;
   }
   .logo-row {
-    flex-wrap: wrap;
     gap: 12px;
   }
   .logo-img {
-    max-height: 45px;
+    max-height: 40px;
+    flex: 1 1 45%;
   }
+  .logo1 { max-height: 60px; }
+  .logo2 { max-height: 40px; }
+  .logo3 { max-height: 30px; }
+  .logo4 { max-height: 25px; }
+  .logo5 { max-height: 75px; }
+  .logo6 { max-height: 55px; }
+  .logo7 { max-height: 60px; }
 }
-*/
-/* Mobile Logo Row: 2 rows */
-@media (max-width: 600px) {
-  .logo-row {
-    flex-wrap: wrap;           /* allow wrapping */
-    justify-content: center;
-    gap: 16px;
-  }
 
+@media (max-width: 400px) {
+  .content {
+    padding: 30px 8px;
+  }
+  .page-title {
+    font-size: 1.5rem;
+  }
+  .workshop-logo-placeholder {
+    width: 100px;
+    height: 40px;
+  }
+  .workshop-card {
+    padding: 0.8rem;
+  }
+  .workshop-subtitle {
+    font-size: 1rem;
+  }
+  .workshop-text {
+    font-size: 0.75rem;
+  }
+  .logo-row {
+    gap: 10px;
+  }
   .logo-img {
-    flex: 1 1 45%;             /* each logo takes ~45% width */
-    max-height: 50px;
+    max-height: 35px;
+    flex: 1 1 48%;
   }
 }
