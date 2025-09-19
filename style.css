@@ -1278,3 +1278,125 @@ a:hover {
         box-sizing: border-box;
     }
 }
+/* ======== RECORDING BUTTON STYLES ======== */
+/* Add this CSS to your existing style.css file */
+
+/* Google Drive recording button styles */
+.recording-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    background: #4285f4;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 2px;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.recording-btn:hover {
+    background: #3367d6;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+    text-decoration: none;
+    color: white;
+}
+
+.recording-btn::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.3 78" fill="white"><path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="%2334a853"/><path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.5z" fill="%2334a853"/><path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.502z" fill="%23ea4335"/><path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.5-1.2h-18.5c-1.6 0-3.15.45-4.5 1.2z" fill="%23fbbc04"/><path d="m59.8 53h27.5c0-1.55-.4-3.1-1.2-4.5l-25.4-44c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8z" fill="%23fbbc04"/><path d="m73.4 26.5-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8 16.15 28h27.5c0-1.55-.4-3.1-1.2-4.5z" fill="%23fbbc04"/><path d="m43.65 25-16.15 28h32.3z" fill="%23fff"/><path d="m59.8 53-16.15 28 16.15 28h27.5c0-1.55-.4-3.1-1.2-4.5l-7.65-13.25z" fill="%23ea4335"/><path d="m73.55 76.8-1.6 2.75c-.8 1.4-1.95 2.5-3.3 3.3l-13.75-23.8z" fill="%23ea4335"/><path d="m43.65 81 13.75 23.8c1.35-.8 2.5-1.9 3.3-3.3l25.4-44c.8-1.4 1.2-2.95 1.2-4.5h-27.502z" fill="%23ea4335"/><path d="m14.25 123.15c1.35.8 2.9 1.2 4.5 1.2h18.5c1.6 0 3.15-.45 4.5-1.2l-13.75-23.8z" fill="%2334a853"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-shrink: 0;
+}
+
+.recording-btn.colab {
+    background: #f9ab00;
+    color: white;
+}
+
+.recording-btn.colab:hover {
+    background: #e8a317;
+    color: white;
+    box-shadow: 0 2px 8px rgba(249, 171, 0, 0.3);
+}
+
+.recording-btn.colab::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M16.9414 4.9757a7.033 7.033 0 0 0-9.8838 0 7.033 7.033 0 0 0 0 9.8838 7.033 7.033 0 0 0 9.8838 0 7.033 7.033 0 0 0 0-9.8838zM12 16.1619c-2.2929 0-4.1619-1.8691-4.1619-4.1619s1.8691-4.1619 4.1619-4.1619 4.1619 1.8691 4.1619 4.1619-1.8691 4.1619-4.1619 4.1619z"/><circle cx="12" cy="12" r="2.381"/></svg>');
+}
+
+/* Responsive adjustments for recording buttons */
+@media screen and (max-width: 768px) {
+    .recording-btn {
+        padding: 5px 8px;
+        font-size: 0.7rem;
+    }
+    
+    .recording-btn::before {
+        width: 12px;
+        height: 12px;
+        margin-right: 4px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .recording-btn {
+        padding: 4px 6px;
+        font-size: 0.65rem;
+        margin: 1px;
+    }
+    
+    .recording-btn::before {
+        width: 10px;
+        height: 10px;
+        margin-right: 3px;
+    }
+}
+
+/* ======== UPDATED TABLE STYLES FOR NEW COLUMN STRUCTURE ======== */
+/* Update your existing table column styles with these */
+
+.main-content table th:nth-child(3),
+.main-content table td:nth-child(3) {
+    min-width: 160px; /* Topic column */
+}
+
+.main-content table th:nth-child(4),
+.main-content table td:nth-child(4) {
+    min-width: 160px; /* Presenter column */
+}
+
+.main-content table th:nth-child(5),
+.main-content table td:nth-child(5) {
+    min-width: 140px; /* Recording column - wider for buttons */
+    text-align: center;
+}
+
+/* Mobile responsive updates for new table structure */
+@media screen and (max-width: 768px) {
+    .main-content table th:nth-child(3),
+    .main-content table td:nth-child(3) {
+        min-width: 120px;
+        font-size: 0.7rem;
+    }
+    
+    .main-content table th:nth-child(4),
+    .main-content table td:nth-child(4) {
+        min-width: 120px;
+        font-size: 0.7rem;
+    }
+    
+    .main-content table th:nth-child(5),
+    .main-content table td:nth-child(5) {
+        min-width: 100px;
+    }
+}
